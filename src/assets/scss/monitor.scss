@@ -1,0 +1,40 @@
+#monitor {
+  background: #000;
+  position: relative;
+  border-top: 3px solid #888;
+  margin: 5%;
+  padding: 1% 1% 2.5% 1%;
+  border-radius: 10px;
+  border-bottom-left-radius: 50% 2%;
+  border-bottom-right-radius: 50% 2%;
+  transition: margin-right 1s;
+  box-shadow: 5px 5px 15px 15px rgba($color: #000000, $alpha: 0.3);
+}
+
+#monitor:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 2.5%;
+  left: 36%;
+  height: 0.1%;
+  width: 28%;
+  background: #ddd;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 0 white;
+}
+
+#monitorscreen.active {
+  background-color: #fff;
+}
+
+#monitorscreen {
+  position: relative;
+  background-color: #000;
+  background-size: cover;
+  background-position: top center;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+}

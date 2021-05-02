@@ -1,0 +1,11 @@
+@import "monitor.scss";
+
+@import "dashboard/dashboard.scss";
+@import "dashboard/header.scss";
+@import "dashboard/notificationbar.scss";
+
+@import "responsive.scss";
+
+#app {
+  background-color: #eceff4;
+}

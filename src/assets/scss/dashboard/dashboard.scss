@@ -1,0 +1,27 @@
+#dashboard {
+    background: linear-gradient(120deg, #f0e6f0 15%, #d8ebf1 80%, #CFEBF1 90%);
+  
+    &::after {
+      padding-top: 56.25%;
+      /* 16:9 ratio */
+      display: block;
+      content: "";
+    }
+  
+    #dashboard-content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+
+      #content {
+        height: 100%;
+        margin: 0px;
+
+        .col {
+            padding: 0;
+        }
+      }
+    }
+  }
