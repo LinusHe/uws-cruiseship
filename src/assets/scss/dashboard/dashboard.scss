@@ -7,6 +7,7 @@
       display: block;
       content: "";
     }
+
   
     #dashboard-content {
       position: absolute;
@@ -23,5 +24,12 @@
             padding: 0;
         }
       }
+    }
+
+    .vue-wavify-wave {
+      position: absolute;
+      height: 8rem;
+      bottom: -58px;
+      opacity: 0.3;
     }
   }
