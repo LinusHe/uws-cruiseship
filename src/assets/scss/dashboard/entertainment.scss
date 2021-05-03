@@ -1,3 +1,44 @@
 #entertainment {
-  
+  .bg-blue {
+    background: linear-gradient(180deg, #4dded9 0%, #65c8cf 100%);
+  }
+
+  .bg-red {
+    background: linear-gradient(180deg, #f9c69e 0%, #fbae97 100%);
+  }
+
+  .bg-yellow {
+    background: linear-gradient(180deg, #feeab6 0%, #f2d27c 100%);
+  }
+
+  .bg-green {
+    background: linear-gradient(180deg, #b9eab0 0%, #9edf99 100%);
+  }
+
+  .btn-row {
+    justify-content: space-around;
+    margin-bottom: 0rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    p {
+      text-align: center;
+      margin-top: 0.2rem;
+      font-size: 0.5rem;
+      margin-bottom: 0;
+    }
+
+    .v-btn {
+      min-width: 0;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 2px 2px 8px 3px rgb(0 0 0 / 5%);
+
+      img {
+        width: 1.5rem;
+        height: auto;
+      }
+    }
+  }
 }

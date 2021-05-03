@@ -37,6 +37,20 @@
         box-shadow: 3px 3px 14px 7px rgb(0 0 0 / 5%);
         min-height: 17rem;
         border-radius: 2rem;
+
+        .heading {
+          margin-top: 1rem;
+          margin-bottom: 0.2rem;
+          font-size: 1rem;
+        }
+
+        .divider {
+          width: 5rem;
+          height: 0.15rem;
+          background-color: #75809E;
+          border-radius: 1rem;
+          margin-bottom: 1rem;
+        }
       }
     }
   }
