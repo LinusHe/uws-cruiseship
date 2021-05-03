@@ -12,7 +12,7 @@
           <v-row>
             <Header></Header>
           </v-row>
-          <v-row>
+          <v-row id="main-content">
             <Entertainment></Entertainment>
             <CabinControl></CabinControl>
             <Events></Events>

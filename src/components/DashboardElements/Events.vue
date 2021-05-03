@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="dashboard-box">
 
   </v-container>
 </template>

@@ -1,35 +1,50 @@
 #dashboard {
-    background: linear-gradient(120deg, #f0e6f0 15%, #d8ebf1 80%, #CFEBF1 90%);
-  
-    &::after {
-      padding-top: 56.25%;
-      /* 16:9 ratio */
-      display: block;
-      content: "";
-    }
+  background: linear-gradient(120deg, #f0e6f0 15%, #d8ebf1 80%, #cfebf1 90%);
 
-  
-    #dashboard-content {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
+  &::after {
+    padding-top: 56.25%;
+    /* 16:9 ratio */
+    display: block;
+    content: "";
+  }
 
-      #content {
-        height: 100%;
-        margin: 0px;
+  #dashboard-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 
-        .col {
-            padding: 0;
-        }
+    #content {
+      height: 100%;
+      margin: 0px;
+
+      .col {
+        padding: 0;
+      }
+
+      #main-content {
+        position: relative;
+        flex-wrap: nowrap;
+        margin-left: 1rem;
+      }
+
+      .dashboard-box {
+        background-color: rgba($color: #fff, $alpha: 0.3);
+        margin: 3.2rem 2rem;
+        width: auto;
+        min-width: 12.5rem;
+        box-shadow: 3px 3px 14px 7px rgb(0 0 0 / 5%);
+        min-height: 17rem;
+        border-radius: 2rem;
       }
     }
-
-    .vue-wavify-wave {
-      position: absolute;
-      height: 8rem;
-      bottom: -58px;
-      opacity: 0.3;
-    }
   }
+
+  .vue-wavify-wave {
+    position: absolute;
+    height: 8rem;
+    bottom: -58px;
+    opacity: 0.3;
+  }
+}
