@@ -1,0 +1,54 @@
+#footer {
+  align-items: center;
+  margin-top: 2rem;
+
+  #stats {
+    p {
+      margin: 0;
+    }
+
+    .number {
+      font-size: 1.8rem;
+      line-height: 1.6rem;
+
+      span {
+        font-size: 1rem;
+        line-height: 0.5rem;
+        top: -0.5rem;
+        position: relative;
+      }
+    }
+
+    .number-description {
+      font-size: 0.55rem;
+      width: max-content;
+    }
+
+    img {
+      margin-right: 0.8rem;
+      height: 3rem;
+      margin-top: 0.7rem;
+      margin-left: 4rem;
+    }
+  }
+
+  #buttonlist {
+    .v-btn {
+      width: 2.4rem;
+      height: 2.4rem;
+      box-shadow: 3px 3px 14px 7px rgb(0 0 0 / 5%);
+
+      img {
+        width: 2.2rem;
+        height: 2.2rem;
+      }
+    }
+    p {
+      margin: 0;
+      margin-top: 0.2rem;
+      font-size: 0.7rem;
+      padding: 0 1rem;
+      text-transform: uppercase;
+    }
+  }
+}
