@@ -37,6 +37,7 @@
               </v-row>
             </v-col>
           </v-row>
+          <div class="badge" v-if="event.type == 'arrival' || event.type == 'boarding'"></div>
         </div>
       </v-window-item>
     </v-window>
@@ -51,8 +52,8 @@
         >
           <v-item v-for="n in pages()" :key="`btn-${n}`" v-slot="{ active }">
             <v-icon :class="active ? 'selected' : ''">mdi-record</v-icon>
-          </v-item></v-item-group
-        >
+          </v-item>
+        </v-item-group>
       </v-row>
       <v-row class="button-group" justify="space-between">
         <v-btn
@@ -75,8 +76,8 @@
           :disabled="currentPage == pages().length - 1"
         >
           <v-icon color="white">mdi-chevron-right</v-icon>
-        </v-btn></v-row
-      >
+        </v-btn>
+      </v-row>
     </div>
   </v-container>
 </template>

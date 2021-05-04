@@ -16,14 +16,30 @@
   }
   p {
     font-size: 0.7rem;
-    margin-top: .2rem;
+    margin-top: 0.2rem;
   }
 
   .event-container {
     overflow: unset;
     margin-top: 1rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     height: 25rem;
+
+    .badge {
+      position: relative;
+      left: 12.8rem;
+      top: -5.5rem;
+      height: 1.2rem;
+      width: 1.2rem;
+      background-color: #19eb43;
+      border: #e3f3f7 3px solid;
+      border-radius: 1rem;
+      margin-bottom: -1.2rem;
+    }
+
+    .type-boarding .badge {
+      background-color: #FF4040;
+    }
 
     .event {
       .row {
@@ -42,14 +58,14 @@
         margin: 0;
         &.time {
           font-size: 0.6rem;
-          margin-top: .5rem;
+          margin-top: 0.5rem;
         }
         &.name {
           font-size: 0.8rem;
         }
         &.location {
           font-size: 0.6rem;
-          margin-bottom: .5rem;
+          margin-bottom: 0.5rem;
           img {
             height: 0.5rem;
             padding-right: 0.1rem;
@@ -62,9 +78,9 @@
         width: 2.5rem;
         padding: 0.6rem;
         border-radius: 3rem;
-        margin-right: .5rem;
-        margin-left: .5rem;
-        margin-top: .5rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
         background-color: #b9eab0;
       }
       &.type-event .icon {

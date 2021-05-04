@@ -1,13 +1,12 @@
 .page-selector {
   .button-group {
     margin: 0 1rem;
-    margin-top: .8rem;
+    margin-top: 0.8rem;
 
     p {
-      font-size: .8rem;
-      margin-top: .3rem;
+      font-size: 0.8rem;
+      margin-top: 0.3rem;
       text-transform: uppercase;
-      
     }
 
     .v-btn--icon.v-size--x-small .v-icon,
@@ -16,11 +15,17 @@
       font-size: 1.2rem;
       width: 1.2rem;
     }
+
+    .v-btn--fab.v-size--x-small {
+      height: 1.8rem;
+      width: 1.8rem;
+    }
   }
 
-  .page-dots i{
+  .page-dots i {
     font-size: 1rem;
-    color: #75809E;
+    color: #75809e;
+    margin-bottom: .5rem;
 
     &.selected {
       font-size: 1.2rem;
