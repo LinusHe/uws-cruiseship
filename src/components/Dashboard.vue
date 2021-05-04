@@ -23,7 +23,7 @@
 
     <div id="dashboard-content">
       <v-row id="content">
-        <v-col sm="9">
+        <v-col class="wrapper" sm="9">
           <v-row>
             <Header></Header>
           </v-row>

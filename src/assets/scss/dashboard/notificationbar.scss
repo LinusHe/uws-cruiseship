@@ -1,5 +1,82 @@
+.v-window {
+  overflow: unset;
+}
+
 #notificationBar {
   background-color: rgba($color: #fff, $alpha: 0.4);
   height: 100%;
-  margin-left: 3rem;
+  margin-left: auto;
+  margin-right: 0;
+  width: 15rem;
+
+  h3 {
+    font-size: 1.3rem;
+    line-height: 1rem;
+    margin-top: 1.2rem;
+  }
+  p {
+    font-size: 0.7rem;
+    margin-top: .2rem;
+  }
+
+  .event-container {
+    overflow: unset;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    height: 25rem;
+
+    .event {
+      .row {
+        margin: 0;
+      }
+
+      .event-content {
+        background-color: #fff;
+        border-radius: 1rem;
+        // box-shadow: 3px 3px 14px 7px rgb(0 0 0 / 5%);
+        margin-bottom: 1rem;
+        align-items: center;
+      }
+
+      p {
+        margin: 0;
+        &.time {
+          font-size: 0.6rem;
+          margin-top: .5rem;
+        }
+        &.name {
+          font-size: 0.8rem;
+        }
+        &.location {
+          font-size: 0.6rem;
+          margin-bottom: .5rem;
+          img {
+            height: 0.5rem;
+            padding-right: 0.1rem;
+          }
+        }
+      }
+
+      .icon {
+        height: 2.5rem;
+        width: 2.5rem;
+        padding: 0.6rem;
+        border-radius: 3rem;
+        margin-right: .5rem;
+        margin-left: .5rem;
+        margin-top: .5rem;
+        background-color: #b9eab0;
+      }
+      &.type-event .icon {
+        background-color: #b9eab0;
+      }
+      &.type-meal .icon {
+        background-color: #feeab6;
+      }
+      &.type-arrival .icon,
+      &.type-boarding .icon {
+        background-color: #fbae97;
+      }
+    }
+  }
 }

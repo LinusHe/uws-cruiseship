@@ -1,0 +1,30 @@
+.page-selector {
+  .button-group {
+    margin: 0 1rem;
+    margin-top: .8rem;
+
+    p {
+      font-size: .8rem;
+      margin-top: .3rem;
+      text-transform: uppercase;
+      
+    }
+
+    .v-btn--icon.v-size--x-small .v-icon,
+    .v-btn--fab.v-size--x-small .v-icon {
+      height: 1.2rem;
+      font-size: 1.2rem;
+      width: 1.2rem;
+    }
+  }
+
+  .page-dots i{
+    font-size: 1rem;
+    color: #75809E;
+
+    &.selected {
+      font-size: 1.2rem;
+      color: #162346;
+    }
+  }
+}

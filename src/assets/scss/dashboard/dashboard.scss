@@ -22,7 +22,9 @@
       .col {
         padding: 0;
       }
-
+      .wrapper {
+        padding-right: 2rem;
+      }
       #main-content {
         position: relative;
         flex-wrap: nowrap;
@@ -31,7 +33,7 @@
 
       .dashboard-box {
         background-color: rgba($color: #fff, $alpha: 0.3);
-        margin: 3.2rem 2rem;
+        margin: 3.2rem 1.5rem;
         width: auto;
         min-width: 12.5rem;
         box-shadow: 3px 3px 14px 7px rgb(0 0 0 / 5%);
@@ -47,7 +49,7 @@
         .divider {
           width: 5rem;
           height: 0.15rem;
-          background-color: #75809E;
+          background-color: #75809e;
           border-radius: 1rem;
           margin-bottom: 1rem;
         }

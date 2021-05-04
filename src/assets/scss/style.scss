@@ -10,8 +10,11 @@
 @import "dashboard/cabincontrol.scss";
 @import "dashboard/events.scss";
 
+@import "elements/pageselector.scss";
+
 @import "responsive.scss";
 
 #app {
   background-color: #eceff4;
+  color: #162346;
 }

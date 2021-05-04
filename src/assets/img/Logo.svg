@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210.86" height="37.083" viewBox="0 0 210.86 37.083">
+  <g id="Logo" transform="translate(-1602 -1021)">
+    <g id="boat-front" transform="translate(1603 1022)">
+      <path id="Pfad_14" data-name="Pfad 14" d="M2,38.2a6.329,6.329,0,0,0,11.905,3.014,6.3,6.3,0,0,0,11.112,0A6.329,6.329,0,0,0,36.923,38.2" transform="translate(-2 -9.469)" fill="none" stroke="#e3bd22" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Pfad_15" data-name="Pfad 15" d="M20,9.937V2h6.35V9.937" transform="translate(-5.713 -2)" fill="none" stroke="#e3bd22" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Pfad_16" data-name="Pfad 16" d="M10,24.523V14.381A2.381,2.381,0,0,1,12.381,12H29.842a2.381,2.381,0,0,1,2.381,2.381V24.523" transform="translate(-3.65 -4.063)" fill="none" stroke="#162346" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Pfad_17" data-name="Pfad 17" d="M9.175,34.287,6,27.937,20.287,20l14.287,7.937L31.4,34.287" transform="translate(-2.825 -5.713)" fill="none" stroke="#162346" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Linie_9" data-name="Linie 9" y2="11.112" transform="translate(17.461 14.287)" fill="none" stroke="#162346" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <text id="Costa_Di_Lusso" data-name="Costa Di Lusso" transform="translate(1645.86 1048.175)" fill="#162346" font-size="24" font-family="Aileron-Bold, Aileron" font-weight="700"><tspan x="0" y="0">Costa Di Lusso</tspan></text>
+  </g>
+</svg>
