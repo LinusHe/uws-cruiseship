@@ -1,21 +1,21 @@
 html {
-  font-size: 12px !important;
+  font-size: calc(100vw / 79);
 }
 
 @media (min-width: 960px) {
   html {
-    font-size: 12px !important;
+    font-size: calc(960px / 79) !important;
   }
 }
 
 @media (min-width: 1264px) {
   html {
-    font-size: 16px !important;
+    font-size: calc(1264px / 79) !important;
   }
 }
 
 @media (min-width: 1904px) {
   html {
-    font-size: 24px !important;
+    font-size: calc(1904px / 79) !important;
   }
 }

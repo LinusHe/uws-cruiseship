@@ -1,0 +1,60 @@
+#cabincontrol {
+  .control-box {
+    height: 4rem;
+    width: 9rem;
+    margin: 0 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+
+    .v-btn__content {
+      display: block;
+    }
+
+    &.bg-orange {
+      background: linear-gradient(45deg, #fbae97 0%, #f9c69e 100%);
+      border: 1px solid #f9c69e;
+      box-shadow: 2px 2px 8px 3px rgba($color: #fabd9b, $alpha: 0.3);
+    }
+
+    &.bg-aqua {
+      background: linear-gradient(45deg, #65c8cf 0%, #4dded9 100%);
+      border: 1px solid #69e4e5;
+      box-shadow: 2px 2px 8px 3px rgba($color: #59d3d4, $alpha: 0.3);
+    }
+
+    p {
+      color: #fff;
+      margin: 0;
+      margin-left: 0.2rem;
+    }
+
+    p.number {
+      font-size: 1.7rem;
+
+      span {
+        font-size: 1rem;
+        top: -0.5rem;
+        position: relative;
+      }
+    }
+
+    p.number-description {
+      font-size: 0.7rem;
+      text-transform: none;
+      letter-spacing: normal;
+      margin-bottom: 0.5rem;
+    }
+
+    img {
+      position: absolute;
+      top: -0.5rem;
+      right: -0.5rem;
+      height: 1.1rem;
+    }
+  }
+
+  p.label {
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+  }
+}

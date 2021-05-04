@@ -11,9 +11,7 @@
         </p></v-col
       >
       <v-col class="flex-grow-0" id="date"
-        ><p id="weekday">
-          {{ weekdayStr }},
-        </p>
+        ><p id="weekday">{{ weekdayStr }},</p>
         <p>
           {{ dayStr }}
         </p>
@@ -46,7 +44,10 @@ export default {
       const weekday = today.toLocaleString("en", { weekday: "long" });
       const month = today.toLocaleString("en", { month: "long" });
       const day = today.toLocaleString("en", { day: "numeric" });
-      const time = today.getHours() + ":" + today.getMinutes();
+      const time =
+        today.getHours() +
+        ":" +
+        today.getMinutes().toLocaleString("en", { minimumIntegerDigits: 2 });
       const dateTime = time;
 
       this.timeStr = dateTime;
