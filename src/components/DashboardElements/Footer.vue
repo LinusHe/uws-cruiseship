@@ -32,15 +32,15 @@
         </v-col>
         <v-col align="center" class="flex-grow-0">
           <v-btn align="center" fab>
-            <img src="../../assets/img/icon/dashboard/support.svg" alt="" />
+            <img src="../../assets/img/icon/dashboard/compass-04.svg" alt="" />
           </v-btn>
-          <p align="center">Support</p>
+          <p align="center">Route</p>
         </v-col>
         <v-col align="center" class="flex-grow-0">
           <v-btn align="center" fab>
-            <img src="../../assets/img/icon/dashboard/support.svg" alt="" />
+            <img src="../../assets/img/icon/dashboard/gear.svg" alt="" />
           </v-btn>
-          <p align="center">Support</p>
+          <p align="center">Settings</p>
         </v-col>
       </v-row>
     </v-col>
