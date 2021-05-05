@@ -2,12 +2,17 @@
   overflow: unset;
 }
 
+.sidebar {
+  z-index: 5;
+}
+
 #notificationBar {
   background-color: rgba($color: #fff, $alpha: 0.4);
   height: 100%;
   margin-left: auto;
   margin-right: 0;
   width: 15rem;
+  z-index: 5;
 
   h3 {
     font-size: 1.3rem;

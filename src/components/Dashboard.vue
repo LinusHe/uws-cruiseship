@@ -27,14 +27,14 @@
           <v-row>
             <Header></Header>
           </v-row>
-          <v-row id="main-content">
-            <Entertainment></Entertainment>
-            <CabinControl></CabinControl>
-            <Events></Events>
+          <v-row id="main-content" :class="'expand-' + expanded">
+            <Entertainment :class="{ expand: expanded == 0 }"></Entertainment>
+            <CabinControl :class="{ expand: expanded == 1 }" @expand="expand(1)"></CabinControl>
+            <Events :class="{ expand: expanded == 2 }" @expand="expand(2)"></Events>
           </v-row>
           <Footer></Footer>
         </v-col>
-        <v-col sm="3">
+        <v-col sm="3" class="sidebar">
           <NotificationBar></NotificationBar>
         </v-col>
       </v-row>
@@ -63,9 +63,15 @@ export default {
   },
 
   data: () => ({
-    //
+    expanded: -1,
   }),
 
   created() {},
+
+  methods: {
+    expand(value) {
+      this.expanded = value;
+    }
+  }
 };
 </script>

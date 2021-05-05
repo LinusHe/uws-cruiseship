@@ -6,6 +6,10 @@
     border-radius: 0.5rem;
     padding: 0 1rem;
 
+    &.lightExpand {
+      width: 19rem;
+    }
+
     .v-btn__content {
       display: block;
     }

@@ -29,16 +29,32 @@
         position: relative;
         flex-wrap: nowrap;
         margin-left: 1rem;
+        display: inline-flex;
+        left: 0rem;
+        transition: all .8s;
+
+        &.expand-1 {
+          left: -9rem;
+        }
+
+        &.expand-2 {
+          left: -18rem;
+        }
       }
 
       .dashboard-box {
         background-color: rgba($color: #fff, $alpha: 0.3);
         margin: 3.2rem 1.5rem;
-        width: auto;
+        width: 6rem;
         min-width: 12.5rem;
         box-shadow: 3px 3px 14px 7px rgb(0 0 0 / 5%);
         min-height: 17rem;
         border-radius: 2rem;
+        transition: width 0.8s;
+
+        &.expand {
+          width: 30rem;
+        }
 
         .heading {
           margin-top: 1rem;

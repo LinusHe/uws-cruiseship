@@ -9,7 +9,7 @@
     </v-row>
 
     <v-row align="center" justify="center">
-      <v-btn depressed class="control-box bg-green" id="controllight">
+      <v-btn @click="bookableEvents()" class="control-box bg-green" id="controllight">
         <v-row>
           <v-col class="flex-grow-0">
             <p class="number">47</p>
@@ -24,7 +24,7 @@
     </v-row>
 
     <v-row align="center" justify="center">
-      <v-btn class="control-box bg-yellow" id="controltemp">
+      <v-btn @click="bookedEvents()" class="control-box bg-yellow" id="controltemp">
         <v-row>
           <v-col class="flex-grow-0">
             <p class="number">12</p>
@@ -51,5 +51,14 @@ export default {
   data: () => ({
     //
   }),
+
+  methods: {
+    bookableEvents() {
+      this.$emit('expand');
+    },
+    bookedEvents() {
+      this.$emit('expand');
+    }
+  }
 };
 </script>
