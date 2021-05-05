@@ -1,0 +1,7 @@
+<svg id="light-2" xmlns="http://www.w3.org/2000/svg" width="28.5" height="28.5" viewBox="0 0 28.5 28.5">
+  <path id="Pfad_224" data-name="Pfad 224" d="M6,12.65a2.65,2.65,0,1,1,5.3,0c0,1.464-1.186,4.417-2.65,4.417S6,14.114,6,12.65Z" transform="translate(-0.583 -1.05)" fill="none" stroke="#c7d4dc" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+  <path id="Pfad_225" data-name="Pfad 225" d="M22.3,18.417a2.65,2.65,0,1,1-5.3,0C17,16.953,18.186,14,19.65,14S22.3,16.953,22.3,18.417Z" transform="translate(-1.867 -1.517)" fill="none" stroke="#c7d4dc" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+  <line id="Linie_100" data-name="Linie 100" y2="2" transform="translate(8 6.5)" fill="none" stroke="#c7d4dc" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+  <line id="Linie_101" data-name="Linie 101" y2="3" transform="translate(18 19.5)" fill="none" stroke="#c7d4dc" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+  <path id="Pfad_226" data-name="Pfad 226" d="M6.3,27.5H3.65A2.65,2.65,0,0,1,1,24.85H1A2.65,2.65,0,0,1,3.65,22.2h15.9a7.95,7.95,0,0,0,7.95-7.95h0A7.95,7.95,0,0,0,19.55,6.3H3.65A2.65,2.65,0,0,1,1,3.65H1A2.65,2.65,0,0,1,3.65,1H6.3" fill="none" stroke="#c7d4dc" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+</svg>

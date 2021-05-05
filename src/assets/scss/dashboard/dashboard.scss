@@ -31,14 +31,14 @@
         margin-left: 1rem;
         display: inline-flex;
         left: 0rem;
-        transition: all .8s;
+        transition: all 0.8s;
 
         &.expand-1 {
-          left: -9rem;
+          left: -16.5rem;
         }
 
         &.expand-2 {
-          left: -18rem;
+          left: -17rem;
         }
       }
 
@@ -53,7 +53,7 @@
         transition: width 0.8s;
 
         &.expand {
-          width: 30rem;
+          width: 46rem;
         }
 
         .heading {
@@ -62,12 +62,16 @@
           font-size: 1rem;
         }
 
-        .divider {
-          width: 5rem;
-          height: 0.15rem;
-          background-color: #75809e;
-          border-radius: 1rem;
-          margin-bottom: 1rem;
+        .section-name {
+          font-size: 0.7rem;
+          margin-top: 0.2rem;
+        }
+
+        .btn-close {
+          position: absolute;
+          left: 60rem;
+          top: 4rem;
+          position: absolute;
         }
       }
     }

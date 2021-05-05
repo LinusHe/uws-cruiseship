@@ -59,6 +59,7 @@
         <v-btn
           fab
           x-small
+          class="myfab"
           elevation="0"
           color="#162346"
           @click="prev"
@@ -70,6 +71,7 @@
         <v-btn
           fab
           x-small
+          class="myfab"
           elevation="0"
           color="#162346"
           @click="next"

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30">
+  <g id="light" transform="translate(0 -1)">
+    <line id="Linie_102" data-name="Linie 102" y1="5" transform="translate(16 2)" fill="none" stroke="#c7d4dc" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Pfad_227" data-name="Pfad 227" d="M21,25a5,5,0,0,1-10,0" fill="none" stroke="#c7d4dc" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Pfad_228" data-name="Pfad 228" d="M13,13,1,22v3H31V22L19,13" fill="none" stroke="#c7d4dc" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Pfad_229" data-name="Pfad 229" d="M16,7h0a2.946,2.946,0,0,0-3,3v3h6V10A2.946,2.946,0,0,0,16,7Z" fill="none" stroke="#c7d4dc" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

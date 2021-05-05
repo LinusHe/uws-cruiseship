@@ -29,7 +29,7 @@
           </v-row>
           <v-row id="main-content" :class="'expand-' + expanded">
             <Entertainment :class="{ expand: expanded == 0 }"></Entertainment>
-            <CabinControl :class="{ expand: expanded == 1 }" @expand="expand(1)"></CabinControl>
+            <CabinControl :class="{ expand: expanded == 1 }" @expand="expand(1)" @shrink="shrink()"></CabinControl>
             <Events :class="{ expand: expanded == 2 }" @expand="expand(2)"></Events>
           </v-row>
           <Footer></Footer>
@@ -63,7 +63,7 @@ export default {
   },
 
   data: () => ({
-    expanded: -1,
+    expanded: 1,
   }),
 
   created() {},
@@ -71,6 +71,9 @@ export default {
   methods: {
     expand(value) {
       this.expanded = value;
+    },
+    shrink() {
+      this.expanded = -1;
     }
   }
 };
