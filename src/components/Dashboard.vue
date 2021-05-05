@@ -23,14 +23,22 @@
 
     <div id="dashboard-content">
       <v-row id="content">
-        <v-col class="wrapper" sm="9">
+        <v-col class="wrapper" sm="9" :class="'expand-' + expandSize">
           <v-row>
             <Header></Header>
           </v-row>
           <v-row id="main-content" :class="'expand-' + expanded">
             <Entertainment :class="{ expand: expanded == 0 }"></Entertainment>
-            <CabinControl :class="{ expand: expanded == 1 }" @expand="expand(1)" @shrink="shrink()"></CabinControl>
-            <Events :class="{ expand: expanded == 2 }" @expand="expand(2)"></Events>
+            <CabinControl
+              v-bind:class="{ expand: expanded == 1 }"
+              @expand="expand(1)"
+              @shrink="shrink()"
+              @expandSize="setExpandSize"
+            ></CabinControl>
+            <Events
+              :class="{ expand: expanded == 2 }"
+              @expand="expand(2)"
+            ></Events>
           </v-row>
           <Footer></Footer>
         </v-col>
@@ -64,6 +72,7 @@ export default {
 
   data: () => ({
     expanded: 1,
+    expandSize: "xl",
   }),
 
   created() {},
@@ -74,7 +83,10 @@ export default {
     },
     shrink() {
       this.expanded = -1;
-    }
-  }
+    },
+    setExpandSize(value) {
+      this.expandSize = value;
+    },
+  },
 };
 </script>

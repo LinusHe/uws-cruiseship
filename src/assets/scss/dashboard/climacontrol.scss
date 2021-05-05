@@ -1,3 +1,59 @@
 #climaControl {
-  
+  .control-label {
+    font-size: 0.6rem;
+    margin: .5rem;
+
+    &.temp {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .control-row {
+    align-items: center;
+
+    img {
+      height: 1.7rem;
+      margin-left: 1.3rem;
+    }
+  }
+
+  .number {
+    width: 4rem;
+    text-align: center;
+    margin: 0 0.7rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+
+    span {
+      font-size: 0.7rem;
+      position: relative;
+      top: -0.2rem;
+      padding-left: 0.3rem;
+    }
+
+    &.fan {
+      font-size: 1.7rem;
+      margin: 0;
+      margin-bottom: 0.2rem;
+      width: auto;
+      margin-right: 1.3rem;
+    }
+  }
+
+  .divider-xs {
+    margin-top: 2rem;
+  }
+
+  .v-input {
+    margin-top: 0.8rem;
+    width: 11.5rem;
+
+    .v-input--selection-controls__input {
+      height: 1rem;
+    }
+
+    label {
+      font-size: 0.8rem;
+    }
+  }
 }
