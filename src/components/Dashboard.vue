@@ -71,7 +71,7 @@ export default {
   },
 
   data: () => ({
-    expanded: 1,
+    expanded: -1,
     expandSize: "xl",
   }),
 

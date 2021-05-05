@@ -47,7 +47,9 @@
       </v-row>
     </div>
 
-    <LightControl v-if="light" @close="close(0)"></LightControl>
+  <transition name="fade" mode="out-in">
+    <LightControl v-if="light" @close="close(0)" :style="{ transitionDelay: delay }"></LightControl>
+  </transition>
     <ClimaControl v-if="clima" @close="close(1)"></ClimaControl>
   </v-container>
 </template>
@@ -66,7 +68,8 @@ export default {
 
   data: () => ({
     light: false,
-    clima: true,
+    clima: false,
+    delay: "0s"
   }),
 
   methods: {
@@ -84,6 +87,7 @@ export default {
     },
     close(value) {
       value == 0 ? (this.light = false) : (this.clima = false);
+      
       this.$emit("shrink");
     },
   },

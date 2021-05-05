@@ -1,29 +1,32 @@
 <template>
-  <v-container>
-    <div id="monitor">
-      <div id="monitorscreen" v-bind:class="{ active: monitorIsActive }">
-        <Dashboard></Dashboard>
+  <div>
+    <v-container>
+      <div id="monitor">
+        <div id="monitorscreen" v-bind:class="{ active: monitorIsActive }">
+          <Dashboard></Dashboard>
+        </div>
       </div>
-    </div>
 
-    <v-row align="center" justify="center">
-      <v-btn
-        @click="monitorIsActive = !monitorIsActive"
-        tile
-        elevation="2"
-        color="success"
-        large
-        class="mr-3"
-      >
-        <v-icon left> mdi-power </v-icon>
-        Turn On
-      </v-btn>
-      <v-btn elevation="2" large class="ml-3">
-        <v-icon left> mdi-bell </v-icon>
-        Send Example Notification
-      </v-btn>
-    </v-row>
-  </v-container>
+
+      <!-- <v-row align="center" justify="center">
+        <v-btn
+          @click="monitorIsActive = !monitorIsActive"
+          tile
+          elevation="2"
+          color="success"
+          large
+          class="mr-3"
+        >
+          <v-icon left> mdi-power </v-icon>
+          Turn On
+        </v-btn>
+        <v-btn elevation="2" large class="ml-3">
+          <v-icon left> mdi-bell </v-icon>
+          Send Example Notification
+        </v-btn>
+      </v-row> -->
+    </v-container>
+  </div>
 </template>
 
 <script>
@@ -38,6 +41,7 @@ export default {
 
   data: () => ({
     monitorIsActive: true,
+    fullscreen: true
   }),
 };
 </script>
