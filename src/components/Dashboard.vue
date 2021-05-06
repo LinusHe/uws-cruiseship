@@ -1,5 +1,7 @@
 <template>
   <v-container id="dashboard" class="pa-0">
+    <Notifications ref="notifications"></Notifications>
+
     <div id="waves">
       <vue-wavify
         fill="#67B1EA"
@@ -43,7 +45,7 @@
           <Footer></Footer>
         </v-col>
         <v-col sm="3" class="sidebar">
-          <NotificationBar></NotificationBar>
+          <NotificationBar ref="notificationBar"></NotificationBar>
         </v-col>
       </v-row>
     </div>
@@ -57,6 +59,7 @@ import CabinControl from "./DashboardElements/CabinControl";
 import Events from "./DashboardElements/Events";
 import NotificationBar from "./DashboardElements/NotificationBar";
 import Footer from "./DashboardElements/Footer";
+import Notifications from "./Notifications.vue";
 
 export default {
   name: "Dashboard",
@@ -68,6 +71,7 @@ export default {
     Events,
     NotificationBar,
     Footer,
+    Notifications,
   },
 
   data: () => ({

@@ -1,0 +1,96 @@
+.alert {
+  z-index: 99;
+  width: 16rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 0.8rem;
+  border-radius: 1rem !important;
+
+  .v-icon {
+    font-size: 1.6rem;
+    position: absolute;
+    right: -0.5rem;
+    top: -0.5rem;
+    margin: 0;
+    border: 1rem #ff6464 solid;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .badge {
+    position: relative;
+    left: 13.4rem;
+    top: -4.5rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: #19eb43;
+    border: #162346 3px solid;
+    border-radius: 1rem;
+    margin-bottom: -1.2rem;
+  }
+
+  .type-boarding .badge {
+    background-color: #ff4040;
+  }
+
+  .event {
+    color: #162346;
+    margin-top: 0.5rem;
+
+    .row {
+      margin: 0;
+    }
+
+    .col {
+      padding: 0;
+    }
+
+    .event-content {
+      background-color: #fff;
+      border-radius: 1rem;
+      // box-shadow: 3px 3px 14px 7px rgb(0 0 0 / 5%);
+      align-items: center;
+    }
+
+    p {
+      margin: 0;
+      &.time {
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+      }
+      &.name {
+        font-size: 0.8rem;
+      }
+      &.location {
+        font-size: 0.6rem;
+        margin-bottom: 0.5rem;
+        img {
+          height: 0.5rem;
+          padding-right: 0.1rem;
+        }
+      }
+    }
+
+    .icon {
+      height: 2.5rem;
+      width: 2.5rem;
+      padding: 0.6rem;
+      border-radius: 3rem;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      margin-top: 0.5rem;
+      background-color: #b9eab0;
+    }
+    &.type-event .icon {
+      background-color: #b9eab0;
+    }
+    &.type-meal .icon {
+      background-color: #feeab6;
+    }
+    &.type-arrival .icon,
+    &.type-boarding .icon {
+      background-color: #fbae97;
+    }
+  }
+}

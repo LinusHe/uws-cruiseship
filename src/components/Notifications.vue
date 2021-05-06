@@ -1,0 +1,102 @@
+<template>
+  <v-alert
+    :value="alert"
+    color="#162346"
+    dark
+    icon="mdi-information"
+    transition="scale-transition"
+    class="alert"
+  >
+    <b>{{ msg }}</b>
+    <div class="event-container">
+      <div class="event" :class="'type-' + event.type">
+        <v-row class="event-content">
+          <v-col class="flex-grow-0">
+            <img
+              class="icon"
+              :src="require(`@/assets/img/icon/notifications/${event.icon}`)"
+              alt=""
+            />
+          </v-col>
+          <v-col>
+            <v-row>
+              <p class="time">{{ event.time }}</p>
+            </v-row>
+            <v-row>
+              <p class="name">{{ event.name }}</p>
+            </v-row>
+            <v-row>
+              <p class="location">
+                <img
+                  class="pin"
+                  src="@/assets/img/icon/dashboard/pin.svg"
+                  alt=""
+                />{{ event.location }}
+              </p>
+            </v-row>
+          </v-col>
+        </v-row>
+        <div
+          class="badge"
+          v-if="event.type == 'arrival' || event.type == 'boarding'"
+        ></div>
+      </div>
+    </div>
+  </v-alert>
+</template>
+
+<script>
+import changeData from "../schedule/changes";
+import { updateEvent } from "../schedule/events";
+import { removeEvent } from "../schedule/events";
+import { addEvent } from "../schedule/events";
+
+export default {
+  name: "Dashboard",
+
+  components: {
+    //
+  },
+
+  data: () => ({
+    msg: "",
+    icon: "",
+    alert: false,
+    event: {},
+  }),
+
+  created() {},
+
+  methods: {
+    triggerChange(id) {
+      let change = changeData[id];
+      switch (change.type) {
+        case "change":
+          updateEvent(change.eventID, change.newEvent);
+          break;
+        case "cancel":
+          removeEvent(change.eventID);
+          break;
+        case "add":
+          addEvent(change.newEvent);
+          break;
+        default:
+          break;
+      }
+
+      this.event = change.newEvent;
+      this.$parent.$refs.notificationBar.$forceUpdate();
+    },
+    triggerNotification() {
+      let randomID = Math.floor(Math.random() * changeData.length);
+      this.msg = changeData[randomID].msg;
+      this.triggerChange(randomID);
+      this.alert = true;
+
+      setTimeout(() => {
+        this.alert = false;
+      }, 5000);
+    },
+  },
+};
+</script>

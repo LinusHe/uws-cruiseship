@@ -37,7 +37,10 @@
               </v-row>
             </v-col>
           </v-row>
-          <div class="badge" v-if="event.type == 'arrival' || event.type == 'boarding'"></div>
+          <div
+            class="badge"
+            v-if="event.type == 'arrival' || event.type == 'boarding'"
+          ></div>
         </div>
       </v-window-item>
     </v-window>
@@ -85,6 +88,8 @@
 </template>
 
 <script>
+import {eventData} from "../../schedule/events";
+
 export default {
   name: "NotificationBar",
 
@@ -96,57 +101,7 @@ export default {
     currentPage: 0,
     currentElement: 0,
     perPage: 5,
-    events: [
-      {
-        name: "Yoga & Meditation Course",
-        time: "10:30 - 11:45",
-        location: "Deck A2",
-        type: "event",
-        icon: "yoga.svg",
-      },
-      {
-        name: "Beach Volleyball Training",
-        time: "10:30 - 11:45",
-        location: "Deck A4",
-        type: "event",
-        icon: "volleyball.svg",
-      },
-      {
-        name: "Lunch Buffet",
-        time: "11.00 - 14:00",
-        location: "Dining Hall",
-        type: "meal",
-        icon: "meal.svg",
-      },
-      {
-        name: "Arrival in Barcelona",
-        time: "11.30",
-        location: "Entire Ship",
-        type: "arrival",
-        icon: "ship.svg",
-      },
-      {
-        name: "Barcelona City Tour",
-        time: "13:30 - 17:00",
-        location: "Gate B2",
-        type: "event",
-        icon: "bus.svg",
-      },
-      {
-        name: "Dinner Buffet",
-        time: "17:00 - 20:00",
-        location: "Dining Hall",
-        type: "meal",
-        icon: "meal.svg",
-      },
-      {
-        name: "Boarding & Departure",
-        time: "02:00",
-        location: "Entire Ship",
-        type: "boarding",
-        icon: "ship.svg",
-      },
-    ],
+    events: eventData,
   }),
 
   methods: {
