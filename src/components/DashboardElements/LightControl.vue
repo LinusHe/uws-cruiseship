@@ -17,8 +17,9 @@
     <v-row>
       <v-container
         class="lamp-container"
-        v-for="lamp in lamps"
+        v-for="(lamp, index) in lamps"
         :key="lamp.name"
+        :data-index="index"
       >
         <v-row justify="center">
           <b class="lamp-name">{{ lamp.name }}</b>
@@ -70,6 +71,9 @@
 </template>
 
 <script>
+import $ from "jquery";
+import Velocity from "velocity-animate";
+
 export default {
   name: "LightControl",
 
@@ -81,6 +85,11 @@ export default {
     this.lamps.forEach((lamp) => {
       this.updateGradientStyle(lamp);
     });
+  },
+
+  mounted() {
+    Velocity($("#lightControl"), { opacity: "0" }, 0);
+    Velocity($("#lightControl"), { opacity: "1" }, { delay: 400 }, 300);
   },
 
   data: () => ({

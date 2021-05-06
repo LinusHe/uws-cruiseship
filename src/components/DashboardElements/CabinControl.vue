@@ -47,9 +47,13 @@
       </v-row>
     </div>
 
-  <transition name="fade" mode="out-in">
-    <LightControl v-if="light" @close="close(0)" :style="{ transitionDelay: delay }"></LightControl>
-  </transition>
+    <transition name="fade" mode="out-in">
+      <LightControl
+        v-if="light"
+        @close="close(0)"
+        :style="{ transitionDelay: delay }"
+      ></LightControl>
+    </transition>
     <ClimaControl v-if="clima" @close="close(1)"></ClimaControl>
   </v-container>
 </template>
@@ -69,15 +73,15 @@ export default {
   data: () => ({
     light: false,
     clima: false,
-    delay: "0s"
+    delay: "0s",
   }),
 
   methods: {
     lighControl() {
-      this.light = true;
-      this.clima = false;
       this.$emit("expand");
       this.$emit("expandSize", "xl");
+      this.light = true;
+      this.clima = false;
     },
     climaControl() {
       this.light = false;
@@ -87,8 +91,9 @@ export default {
     },
     close(value) {
       value == 0 ? (this.light = false) : (this.clima = false);
-      
-      this.$emit("shrink");
+      this.$nextTick(function () {
+        this.$emit("shrink");
+      });
     },
   },
 };

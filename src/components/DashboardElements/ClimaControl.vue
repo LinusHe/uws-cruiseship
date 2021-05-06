@@ -21,7 +21,7 @@
       </v-col>
       <v-row sm="12" justify="center" class="control-row">
         <v-btn
-        :disabled="autoMode"
+          :disabled="autoMode"
           @click="changeTemp(-0.5)"
           fab
           elevation="0"
@@ -33,7 +33,7 @@
           {{ temperature }}<span>°C</span>
         </p>
         <v-btn
-        :disabled="autoMode"
+          :disabled="autoMode"
           @click="changeTemp(0.5)"
           fab
           x-small
@@ -55,7 +55,7 @@
       </v-col>
       <v-row sm="12" justify="center" class="control-row">
         <v-btn
-        :disabled="autoMode"
+          :disabled="autoMode"
           @click="changeFan(-1)"
           fab
           elevation="0"
@@ -65,7 +65,7 @@
         ><img src="../../assets/img/icon/dashboard/ventilation.svg" />
         <p class="number fan">{{ fanSpeed }}</p>
         <v-btn
-        :disabled="autoMode"
+          :disabled="autoMode"
           @click="changeFan(1)"
           fab
           x-small
@@ -88,6 +88,9 @@
 </template>
 
 <script>
+import $ from "jquery";
+import Velocity from "velocity-animate";
+
 export default {
   name: "ClimaControl",
 
@@ -104,6 +107,11 @@ export default {
 
   created: function () {
     this.updateTempGradient();
+  },
+
+  mounted() {
+    Velocity($("#climaControl"), { opacity: "0" }, 0);
+    Velocity($("#climaControl"), { opacity: "1" }, { delay: 400 }, 300);
   },
 
   methods: {
