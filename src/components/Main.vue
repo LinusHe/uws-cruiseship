@@ -3,12 +3,13 @@
     <v-container>
       <div id="monitor">
         <div id="monitorscreen" v-bind:class="{ active: monitorIsActive }">
-          <Dashboard ref="dashboard"></Dashboard>
+          <Dashboard v-if="monitorIsActive" ref="dashboard"></Dashboard>
         </div>
       </div>
 
       <v-row align="center" justify="center">
         <v-btn
+          v-if="!monitorIsActive"
           @click="monitorIsActive = !monitorIsActive"
           tile
           elevation="2"
@@ -19,7 +20,27 @@
           <v-icon left> mdi-power </v-icon>
           Turn On
         </v-btn>
-        <v-btn @click="sendNotification" elevation="2" large class="ml-3">
+        <v-btn
+          v-if="monitorIsActive"
+          @click="monitorIsActive = !monitorIsActive"
+          tile
+          elevation="2"
+          color="warning"
+          large
+          class="mr-3"
+        >
+          <v-icon left> mdi-power </v-icon>
+          Turn Off
+        </v-btn>
+        <v-btn
+          v-if="monitorIsActive"
+          @click="sendNotification"
+          color="rgb(22, 35, 70)"
+          dark
+          elevation="2"
+          large
+          class="ml-3"
+        >
           <v-icon left> mdi-bell </v-icon>
           Send Example Notification
         </v-btn>
@@ -38,9 +59,10 @@ export default {
     Dashboard,
   },
 
+  mounted() {},
+
   data: () => ({
-    monitorIsActive: true,
-    fullscreen: true,
+    monitorIsActive: false,
   }),
 
   methods: {

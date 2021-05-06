@@ -63,6 +63,9 @@ import NotificationBar from "./DashboardElements/NotificationBar";
 import Footer from "./DashboardElements/Footer";
 import Notifications from "./Notifications.vue";
 
+import $ from "jquery";
+import Velocity from "velocity-animate";
+
 export default {
   name: "Dashboard",
 
@@ -81,7 +84,10 @@ export default {
     expandSize: "xl",
   }),
 
-  created() {},
+  mounted() {
+    Velocity($("#dashboard"), { opacity: "0" }, 0);
+    Velocity($("#dashboard"), { opacity: "1" }, { delay: 0 }, 300);
+  },
 
   methods: {
     expand(value) {
