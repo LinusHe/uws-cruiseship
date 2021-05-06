@@ -1,7 +1,8 @@
 #events {
-
   .dashboard-buttons {
-    margin-top: .8rem;
+    max-width: 12.7rem;
+    margin: auto;
+    margin-top: 0.8rem;
   }
 
   .control-box {
@@ -18,13 +19,13 @@
     }
 
     &.bg-green {
-      background: linear-gradient(45deg, #9EDF99 0%, #B9EAB0 100%);
+      background: linear-gradient(45deg, #9edf99 0%, #b9eab0 100%);
       border: 1px solid #b6e9ad;
       box-shadow: 2px 2px 8px 3px rgba($color: #b6e9ad, $alpha: 0.3);
     }
 
     &.bg-yellow {
-      background: linear-gradient(45deg, #F2D27C 0%, #FEEAB6 100%);
+      background: linear-gradient(45deg, #f2d27c 0%, #feeab6 100%);
       border: 1px solid #feeab6;
       box-shadow: 2px 2px 8px 3px rgba($color: #feeab6, $alpha: 0.3);
     }
@@ -41,8 +42,8 @@
     p.number {
       font-size: 3rem;
       line-height: 2.3rem;
-      padding-right: .1rem;
-      padding-left: .25rem;
+      padding-right: 0.1rem;
+      padding-left: 0.25rem;
 
       span {
         font-size: 1rem;

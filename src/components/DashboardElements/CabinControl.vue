@@ -47,15 +47,16 @@
       </v-row>
     </div>
 
-    <transition name="fade" mode="out-in">
-      <LightControl
-        v-if="light"
-        @close="close(0)"
-        @update="updateBrightness"
-        :style="{ transitionDelay: delay }"
-      ></LightControl>
-    </transition>
-    <ClimaControl v-if="clima" @close="close(1)" @update="updateTemp"></ClimaControl>
+    <LightControl
+      v-if="light"
+      @close="close(0)"
+      @update="updateBrightness"
+    ></LightControl>
+    <ClimaControl
+      v-if="clima"
+      @close="close(1)"
+      @update="updateTemp"
+    ></ClimaControl>
   </v-container>
 </template>
 

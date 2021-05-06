@@ -8,7 +8,7 @@
       <div class="divider"></div>
     </v-row>
 
-    <div class="dashboard-buttons">
+    <div class="dashboard-buttons" v-if="!booked && !bookable">
       <v-row align="center" justify="center">
         <v-btn
           @click="bookableEvents()"
@@ -49,27 +49,45 @@
         <p align="center" class="label">Booked Events</p>
       </v-row>
     </div>
+
+    <BookableEvents v-if="bookable || booked" @close="close(0)"></BookableEvents>
   </v-container>
 </template>
 
 <script>
+import BookableEvents from "./BookableEvents";
+
 export default {
   name: "Events",
 
   components: {
-    //
+    BookableEvents,
   },
 
   data: () => ({
-    //
+    bookable: false,
+    booked: false,
   }),
 
   methods: {
     bookableEvents() {
+      this.bookable = true;
+      this.booked = false;
       this.$emit("expand");
+      this.$emit("expandSize", "xl");
     },
     bookedEvents() {
+      this.bookable = false;
+      this.booked = true;
       this.$emit("expand");
+      this.$emit("expandSize", "xl");
+    },
+    close() {
+      this.bookable = false;
+      this.booked = false;
+      this.$nextTick(function () {
+        this.$emit("shrink");
+      });
     },
   },
 };

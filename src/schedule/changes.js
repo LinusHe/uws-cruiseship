@@ -12,7 +12,8 @@ let changes =
         icon: "volleyball.svg",
         id: 1
       },
-      id: 0
+      id: 0,
+      displayed: false,
     },
     {
       msg: "Arrival Time Changed",
@@ -26,6 +27,7 @@ let changes =
         icon: "ship.svg",
         id: 3
       },
+      displayed: false,
       id: 1
     },
     {
@@ -40,6 +42,7 @@ let changes =
         icon: "yoga.svg",
         id: 0
       },
+      displayed: false,
       id: 2
     },
     {
@@ -54,6 +57,7 @@ let changes =
         icon: "bus.svg",
         id: 4
       },
+      displayed: false,
       id: 3
     },
     {
@@ -68,6 +72,7 @@ let changes =
         icon: "ship.svg",
         id: 6
       },
+      displayed: false,
       id: 4
     },
     {
@@ -82,6 +87,7 @@ let changes =
         icon: "volleyball.svg",
         id: 1
       },
+      displayed: false,
       id: 5
     },
     {
@@ -96,6 +102,7 @@ let changes =
         icon: "ship.svg",
         id: 7
       },
+      displayed: false,
       id: 6
     },
     {
@@ -110,6 +117,7 @@ let changes =
         icon: "ship.svg",
         id: 8
       },
+      displayed: false,
       id: 7
     },
     {
@@ -124,6 +132,7 @@ let changes =
         icon: "meal.svg",
         id: 9
       },
+      displayed: false,
       id: 8
     },
   ];

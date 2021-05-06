@@ -21,7 +21,7 @@
         </v-btn>
         <v-btn @click="sendNotification" elevation="2" large class="ml-3">
           <v-icon left> mdi-bell </v-icon>
-          Send Example Schedule Change Notification
+          Send Example Notification
         </v-btn>
       </v-row>
     </v-container>

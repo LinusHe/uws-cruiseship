@@ -30,13 +30,6 @@
         display: inline-flex;
         left: 0rem;
         transition: all 0.8s;
-
-        &.expand-1 {
-        }
-
-        &.expand-2 {
-          left: -17rem;
-        }
       }
 
       .dashboard-box {
@@ -79,7 +72,12 @@
             }
           }
           .expand-2 {
-            left: -26.5rem !important;
+            left: -32rem !important;
+            .btn-close {
+              position: absolute;
+              left: 75rem;
+              top: 4rem;
+            }
           }
         }
         &.expand-xs {
@@ -92,11 +90,16 @@
               position: absolute;
               left: 37rem;
               top: 4rem;
-              position: absolute;
             }
           }
           .expand-2 {
             left: -26.5rem !important;
+            .btn-close {
+              position: absolute;
+              left: 37rem;
+              top: 4rem;
+              position: absolute;
+            }
           }
         }
       }

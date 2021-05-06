@@ -40,6 +40,8 @@
             <Events
               :class="{ expand: expanded == 2 }"
               @expand="expand(2)"
+              @shrink="shrink()"
+              @expandSize="setExpandSize"
             ></Events>
           </v-row>
           <Footer></Footer>
