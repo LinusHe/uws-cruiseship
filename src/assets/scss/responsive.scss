@@ -27,3 +27,26 @@ html {
 .row + .row {
   margin-top: 0.75rem;
 }
+
+.v-application p {
+    margin-bottom: 1rem;
+}
+
+.v-slider--horizontal {
+    min-height: 2rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.container {
+  padding: .75rem;
+}
+
+.v-alert {
+  font-size: 1rem;
+}
+
+.v-btn:not(.v-btn--round).v-size--default {
+    padding: 0 1rem;
+    min-width: 4rem;
+}

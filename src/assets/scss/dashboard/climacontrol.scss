@@ -46,10 +46,19 @@
 
   .v-input {
     margin-top: 0.8rem;
-    width: 11.5rem;
+    width: 12rem;
 
     .v-input--selection-controls__input {
       height: 1rem;
+      width: 1rem;
+    }
+
+    .v-icon {
+      font-size: 1.5rem;
+    }
+
+    .v-input--selection-controls__ripple {
+      display: none;
     }
 
     label {
