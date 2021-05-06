@@ -18,10 +18,10 @@
           id="controllight"
         >
           <v-row>
-            <p class="number">85<span>%</span></p>
+            <p class="number">{{ avgBrightness }}<span>%</span></p>
           </v-row>
           <v-row>
-            <p class="number-description">Global Brightness</p>
+            <p class="number-description">Average Brightness</p>
           </v-row>
           <img src="../../assets/img/icon/dashboard/sun.svg" />
         </v-btn>
@@ -36,7 +36,7 @@
           id="controltemp"
         >
           <v-row>
-            <p class="number">22<span>°C</span></p>
+            <p class="number">{{ temp }}<span>°C</span></p>
           </v-row>
           <v-row>
             <p class="number-description">Room Temperature</p>
@@ -51,10 +51,11 @@
       <LightControl
         v-if="light"
         @close="close(0)"
+        @update="updateBrightness"
         :style="{ transitionDelay: delay }"
       ></LightControl>
     </transition>
-    <ClimaControl v-if="clima" @close="close(1)"></ClimaControl>
+    <ClimaControl v-if="clima" @close="close(1)" @update="updateTemp"></ClimaControl>
   </v-container>
 </template>
 
@@ -73,7 +74,8 @@ export default {
   data: () => ({
     light: false,
     clima: false,
-    delay: "0s",
+    avgBrightness: 66,
+    temp: 22,
   }),
 
   methods: {
@@ -94,6 +96,12 @@ export default {
       this.$nextTick(function () {
         this.$emit("shrink");
       });
+    },
+    updateBrightness(value) {
+      this.avgBrightness = value;
+    },
+    updateTemp(value) {
+      this.temp = value;
     },
   },
 };

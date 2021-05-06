@@ -125,6 +125,7 @@ export default {
     changeTemp(value) {
       if (this.temperature + value <= 26 && this.temperature + value >= 17) {
         this.temperature = this.temperature + value;
+        this.$emit("update", this.temperature);
       }
       this.updateTempGradient();
     },

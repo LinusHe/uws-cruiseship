@@ -137,6 +137,7 @@ export default {
       if (lamp.brightness + value <= 100 && lamp.brightness + value >= 0) {
         lamp.brightness = lamp.brightness + value;
         this.updateGradientStyle(lamp);
+        this.updateAvg()
       }
     },
     updateGradientStyle(lamp) {
@@ -147,6 +148,13 @@ export default {
         lamp.brightness +
         "%);";
     },
+    updateAvg() {
+      let sum = 0;
+      this.lamps.forEach(lamp => {
+        sum += lamp.brightness;
+      });
+      this.$emit('update', Math.round(sum/4));
+    }
   },
 };
 </script>
