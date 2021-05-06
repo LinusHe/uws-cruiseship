@@ -19,3 +19,11 @@ html {
     font-size: calc(1904px / 79) !important;
   }
 }
+
+.row {
+  margin: -0.75rem;
+}
+
+.row + .row {
+  margin-top: 0.75rem;
+}
