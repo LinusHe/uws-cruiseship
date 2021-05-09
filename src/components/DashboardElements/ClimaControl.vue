@@ -1,14 +1,6 @@
 <template>
   <v-container id="climaControl">
-    <v-btn
-      @click="close()"
-      fab
-      x-small
-      elevation="0"
-      class="myfab btn-close"
-      color="#162346"
-      ><v-icon color="white">mdi-close</v-icon>
-    </v-btn>
+    <v-btn @click="close()" fab x-small elevation="0" class="myfab btn-close" color="#162346"><v-icon color="white">mdi-close</v-icon> </v-btn>
 
     <v-row justify="center">
       <p class="section-name">Temperature Control</p>
@@ -20,27 +12,12 @@
         <p class="control-label temp">Room Temperature</p>
       </v-col>
       <v-row sm="12" justify="center" class="control-row">
-        <v-btn
-          :disabled="autoMode"
-          @click="changeTemp(-0.5)"
-          fab
-          elevation="0"
-          class="myfab-xxs"
-          color="#162346"
-          ><v-icon color="white">mdi-minus</v-icon>
+        <v-btn :disabled="autoMode" @click="changeTemp(-0.5)" fab elevation="0" class="myfab-xxs" color="#162346">
+          <v-icon color="white">mdi-minus</v-icon>
         </v-btn>
-        <p :style="tempGradient" class="number temp">
-          {{ temperature }}<span>°C</span>
-        </p>
-        <v-btn
-          :disabled="autoMode"
-          @click="changeTemp(0.5)"
-          fab
-          x-small
-          elevation="0"
-          class="myfab-xxs"
-          color="#162346"
-          ><v-icon color="white">mdi-plus</v-icon>
+        <p :style="tempGradient" class="number temp">{{ temperature }}<span>°C</span></p>
+        <v-btn :disabled="autoMode" @click="changeTemp(0.5)" fab x-small elevation="0" class="myfab-xxs" color="#162346">
+          <v-icon color="white">mdi-plus</v-icon>
         </v-btn>
       </v-row>
       <v-col sm="12" justify="center" align="center">
@@ -54,34 +31,18 @@
         <p class="control-label">Fan Speed</p>
       </v-col>
       <v-row sm="12" justify="center" class="control-row">
-        <v-btn
-          :disabled="autoMode"
-          @click="changeFan(-1)"
-          fab
-          elevation="0"
-          class="myfab-xxs"
-          color="#162346"
-          ><v-icon color="white">mdi-minus</v-icon> </v-btn
+        <v-btn :disabled="autoMode" @click="changeFan(-1)" fab elevation="0" class="myfab-xxs" color="#162346">
+          <v-icon color="white">mdi-minus</v-icon> </v-btn
         ><img src="../../assets/img/icon/dashboard/ventilation.svg" />
         <p class="number fan">{{ fanSpeed }}</p>
-        <v-btn
-          :disabled="autoMode"
-          @click="changeFan(1)"
-          fab
-          x-small
-          elevation="0"
-          class="myfab-xxs"
-          color="#162346"
-          ><v-icon color="white">mdi-plus</v-icon>
+        <v-btn :disabled="autoMode" @click="changeFan(1)" fab x-small elevation="0" class="myfab-xxs" color="#162346">
+          <v-icon color="white">mdi-plus</v-icon>
         </v-btn>
       </v-row>
       <v-col sm="12" align="center" justify="center">
-        <v-checkbox
-          @change="toggleAutoMode"
-          hide-details=""
-          v-model="autoMode"
-          label="Automatic air conditioning"
-        ></v-checkbox>
+        <v-checkbox @change="toggleAutoMode" hide-details="" v-model="autoMode" 
+          label="Automatic air conditioning">
+        </v-checkbox>
       </v-col>
     </v-row>
   </v-container>
@@ -105,7 +66,7 @@ export default {
     autoMode: false,
   }),
 
-  created: function () {
+  created: function() {
     this.updateTempGradient();
   },
 
@@ -137,11 +98,9 @@ export default {
     },
     updateTempGradient() {
       this.tempGradient =
-        "background: linear-gradient(90deg, rgba(81,217,215,1) 0%, rgba(81,217,215,1) " +
-        ((this.temperature - 17) * 100) / 9 +
-        "%, rgba(212,212,212,1) " +
-        ((this.temperature - 17) * 100) / 9 +
-        "%);";
+        "background: linear-gradient(90deg, rgba(81,217,215,1) 0%, rgba(81,217,215,1) " 
+        + ((this.temperature - 17) * 100) / 9 + "%, rgba(212,212,212,1) " 
+        + ((this.temperature - 17) * 100) / 9 + "%);";
     },
     close() {
       this.$emit("close");

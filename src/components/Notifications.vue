@@ -1,22 +1,11 @@
 <template>
-  <v-alert
-    :value="alert"
-    color="#162346"
-    dark
-    icon="mdi-information"
-    transition="scale-transition"
-    class="alert"
-  >
+  <v-alert :value="alert" color="#162346" dark icon="mdi-information" transition="scale-transition" class="alert">
     <b>{{ msg }}</b>
     <div class="event-container">
       <div class="event" :class="'type-' + event.type">
         <v-row class="event-content">
           <v-col class="flex-grow-0">
-            <img
-              class="icon"
-              :src="require(`@/assets/img/icon/notifications/${event.icon}`)"
-              alt=""
-            />
+            <img class="icon" :src="require(`@/assets/img/icon/notifications/${event.icon}`)" alt="" />
           </v-col>
           <v-col>
             <v-row>
@@ -27,19 +16,13 @@
             </v-row>
             <v-row>
               <p class="location">
-                <img
-                  class="pin"
-                  src="@/assets/img/icon/dashboard/pin.svg"
-                  alt=""
-                />{{ event.location }}
+                <img class="pin" src="@/assets/img/icon/dashboard/pin.svg" alt="" />
+                {{ event.location }}
               </p>
             </v-row>
           </v-col>
         </v-row>
-        <div
-          class="badge"
-          v-if="event.type == 'arrival' || event.type == 'boarding'"
-        ></div>
+        <div class="badge" v-if="event.type == 'arrival' || event.type == 'boarding'"></div>
       </div>
     </div>
   </v-alert>
@@ -68,24 +51,6 @@ export default {
   created() {},
 
   methods: {
-    triggerChange(id) {
-      let change = changeData[id];
-      switch (change.type) {
-        case "change":
-          updateEvent(change.eventID, change.newEvent);
-          break;
-        case "cancel":
-          removeEvent(change.eventID);
-          break;
-        case "add":
-          addEvent(change.newEvent);
-          break;
-        default:
-          break;
-      }
-      this.event = change.newEvent;
-      this.$parent.$refs.notificationBar.$forceUpdate();
-    },
     triggerNotification() {
       let displayCount = 0;
       changeData.forEach((element) => {
@@ -104,6 +69,24 @@ export default {
         }, 5000);
       } else if (displayCount != changeData.length) this.triggerNotification();
       else window.location.reload();
+    },
+    triggerChange(id) {
+      let change = changeData[id];
+      switch (change.type) {
+        case "change":
+          updateEvent(change.eventID, change.newEvent);
+          break;
+        case "cancel":
+          removeEvent(change.eventID);
+          break;
+        case "add":
+          addEvent(change.newEvent);
+          break;
+        default:
+          break;
+      }
+      this.event = change.newEvent;
+      this.$parent.$refs.notificationBar.$forceUpdate();
     },
   },
 };

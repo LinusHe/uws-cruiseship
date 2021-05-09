@@ -6,15 +6,11 @@
     </div>
     <v-row id="timebox" justify="end">
       <v-col class="flex-grow-0">
-        <p id="time">
-          {{ timeStr }}
-        </p></v-col
-      >
+        <p id="time">{{ timeStr }}</p>
+      </v-col>
       <v-col class="flex-grow-0" id="date"
         ><p id="weekday">{{ weekdayStr }},</p>
-        <p>
-          {{ dayStr }}
-        </p>
+        <p>{{ dayStr }}</p>
       </v-col>
     </v-row>
   </v-row>
@@ -39,15 +35,12 @@ export default {
   }),
 
   methods: {
-    getNow: function () {
+    getNow: function() {
       const today = new Date();
       const weekday = today.toLocaleString("en", { weekday: "long" });
       const month = today.toLocaleString("en", { month: "long" });
       const day = today.toLocaleString("en", { day: "numeric" });
-      const time =
-        today.getHours() +
-        ":" +
-        today.getMinutes().toLocaleString("en", { minimumIntegerDigits: 2 });
+      const time = today.getHours() + ":" + today.getMinutes().toLocaleString("en", { minimumIntegerDigits: 2 });
       const dateTime = time;
 
       this.timeStr = dateTime;

@@ -11,12 +11,7 @@
     <!-- Dashboard Cabin Control -->
     <div class="dashboard-buttons" v-if="!light && !clima">
       <v-row align="center" justify="center" class="control-light-card">
-        <v-btn
-          @click="lighControl()"
-          depressed
-          class="control-box bg-orange"
-          id="controllight"
-        >
+        <v-btn @click="lighControl()" depressed class="control-box bg-orange" id="controllight">
           <v-row>
             <p class="number">{{ avgBrightness }}<span>%</span></p>
           </v-row>
@@ -30,11 +25,7 @@
 
       <!-- Dashboard Light Control -->
       <v-row align="center" justify="center">
-        <v-btn
-          @click="climaControl()"
-          class="control-box bg-aqua"
-          id="controltemp"
-        >
+        <v-btn @click="climaControl()" class="control-box bg-aqua" id="controltemp">
           <v-row>
             <p class="number">{{ temp }}<span>°C</span></p>
           </v-row>
@@ -47,16 +38,8 @@
       </v-row>
     </div>
 
-    <LightControl
-      v-if="light"
-      @close="close(0)"
-      @update="updateBrightness"
-    ></LightControl>
-    <ClimaControl
-      v-if="clima"
-      @close="close(1)"
-      @update="updateTemp"
-    ></ClimaControl>
+    <LightControl v-if="light" @close="close(0)" @update="updateBrightness"></LightControl>
+    <ClimaControl v-if="clima" @close="close(1)" @update="updateTemp"></ClimaControl>
   </v-container>
 </template>
 
@@ -94,7 +77,7 @@ export default {
     },
     close(value) {
       value == 0 ? (this.light = false) : (this.clima = false);
-      this.$nextTick(function () {
+      this.$nextTick(function() {
         this.$emit("shrink");
       });
     },

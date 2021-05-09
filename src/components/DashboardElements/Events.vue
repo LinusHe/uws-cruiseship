@@ -10,19 +10,13 @@
 
     <div class="dashboard-buttons" v-if="!booked && !bookable">
       <v-row align="center" justify="center">
-        <v-btn
-          @click="bookableEvents()"
-          class="control-box bg-green"
-          id="controllight"
-        >
+        <v-btn @click="bookableEvents()" class="control-box bg-green" id="controllight">
           <v-row>
             <v-col class="flex-grow-0">
               <p class="number">47</p>
             </v-col>
             <v-col>
-              <p class="number-description" align="left">
-                Events<br />bookable
-              </p>
+              <p class="number-description" align="left">Events<br />bookable</p>
             </v-col>
           </v-row>
           <img src="../../assets/img/icon/dashboard/check-in.svg" />
@@ -31,11 +25,7 @@
       </v-row>
 
       <v-row align="center" justify="center">
-        <v-btn
-          @click="bookedEvents()"
-          class="control-box bg-yellow"
-          id="controltemp"
-        >
+        <v-btn @click="bookedEvents()" class="control-box bg-yellow" id="controltemp">
           <v-row>
             <v-col class="flex-grow-0">
               <p class="number">12</p>
@@ -88,7 +78,7 @@ export default {
     close() {
       this.bookable = false;
       this.booked = false;
-      this.$nextTick(function () {
+      this.$nextTick(function() {
         this.$emit("shrink");
       });
     },

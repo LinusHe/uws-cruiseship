@@ -34,9 +34,7 @@
     <v-row class="btn-row">
       <div>
         <v-btn depressed class="bg-blue">
-          <img
-            src="../../assets/img/icon/entertainment/icons8_amazon_prime_video.svg"
-          />
+          <img src="../../assets/img/icon/entertainment/icons8_amazon_prime_video.svg" />
         </v-btn>
         <p>Prime Video</p>
       </div>
@@ -59,27 +57,21 @@
     <v-row class="btn-row">
       <div>
         <v-btn depressed>
-          <img
-            src="../../assets/img/icon/entertainment/icons8_google_play_music.svg"
-          />
+          <img src="../../assets/img/icon/entertainment/icons8_google_play_music.svg" />
         </v-btn>
         <p>Music</p>
       </div>
 
       <div>
         <v-btn depressed class="bg-red">
-          <img
-            src="../../assets/img/icon/entertainment/icons8_play_button.svg"
-          />
+          <img src="../../assets/img/icon/entertainment/icons8_play_button.svg" />
         </v-btn>
         <p>YouTube</p>
       </div>
 
       <div>
         <v-btn depressed>
-          <img
-            src="../../assets/img/icon/entertainment/icons8_disney_plus_1.svg"
-          />
+          <img src="../../assets/img/icon/entertainment/icons8_disney_plus_1.svg" />
         </v-btn>
         <p>Disney+</p>
       </div>

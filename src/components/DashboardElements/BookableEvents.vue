@@ -1,14 +1,6 @@
 <template>
   <v-container id="bookableEvents">
-    <v-btn
-      @click="close()"
-      fab
-      x-small
-      elevation="0"
-      class="myfab btn-close"
-      color="#162346"
-      ><v-icon color="white">mdi-close</v-icon>
-    </v-btn>
+    <v-btn @click="close()" fab x-small elevation="0" class="myfab btn-close" color="#162346"><v-icon color="white">mdi-close</v-icon> </v-btn>
 
     <v-row justify="center">
       <p class="section-name">Bookable Events</p>
@@ -35,7 +27,7 @@ export default {
     //
   },
 
-  created: function () {
+  created: function() {
     //
   },
 
