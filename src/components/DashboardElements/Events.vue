@@ -50,18 +50,21 @@
       </v-row>
     </div>
 
-    <BookableEvents v-if="bookable || booked" @close="close(0)"></BookableEvents>
+    <BookableEvents v-if="bookable" @close="close(0)"></BookableEvents>
+    <BookedEvents v-if="booked" @close="close(1)"></BookedEvents>
   </v-container>
 </template>
 
 <script>
 import BookableEvents from "./BookableEvents";
+import BookedEvents from "./BookedEvents";
 
 export default {
   name: "Events",
 
   components: {
     BookableEvents,
+    BookedEvents,
   },
 
   data: () => ({
