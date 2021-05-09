@@ -83,26 +83,22 @@ export default {
         default:
           break;
       }
-
       this.event = change.newEvent;
       this.$parent.$refs.notificationBar.$forceUpdate();
     },
     triggerNotification() {
-
       let displayCount = 0;
       changeData.forEach((element) => {
         element.displayed ? (displayCount = displayCount + 1) : null;
       });
 
       let randomID = Math.floor(Math.random() * changeData.length);
-      console.log(displayCount);
 
       if (changeData[randomID].displayed == false) {
         changeData[randomID].displayed = true;
         this.msg = changeData[randomID].msg;
         this.triggerChange(randomID);
         this.alert = true;
-
         setTimeout(() => {
           this.alert = false;
         }, 5000);
