@@ -1,0 +1,78 @@
+.event {
+  .event-content {
+    margin: 0;
+    background-color: #fff;
+    border-radius: 1rem;
+    // box-shadow: 3px 3px 14px 7px rgb(0 0 0 / 5%);
+    margin-bottom: 1rem;
+    align-items: center;
+    padding: 0.2rem 0;
+
+    p {
+      margin: 0;
+      padding-left: 0.8rem;
+      &.time {
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+        span {
+          letter-spacing: 0.05rem;
+          padding-right: 0.3rem;
+        }
+      }
+      &.name {
+        font-size: 0.8rem;
+      }
+      &.location {
+        font-size: 0.6rem;
+        margin-bottom: 0.5rem;
+        img {
+          height: 0.5rem;
+          padding-right: 0.1rem;
+        }
+        .freeSlots {
+          letter-spacing: 0.05rem;
+          padding: 0.1rem 0.3rem;
+          background-color: #f4a0a0;
+          border-radius: 1rem;
+          color: #fff;
+          margin-left: .3rem;
+        }
+      }
+    }
+
+    .side-button {
+      height: 3.9rem;
+      margin: -0.2rem;
+      border-radius: 0 1rem 1rem 0;
+      padding: 0 0.8rem 0 0 !important;
+      color: #162346;
+      font-weight: bold;
+      display: block;
+      .v-btn__content {
+        display: block;
+        padding: 0;
+      }
+    }
+  }
+
+  .icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.6rem;
+    border-radius: 3rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #b9eab0;
+  }
+  &.type-event .icon {
+    background-color: #b9eab0;
+  }
+  &.type-meal .icon {
+    background-color: #feeab6;
+  }
+  &.type-arrival .icon,
+  &.type-boarding .icon {
+    background-color: #fbae97;
+  }
+}

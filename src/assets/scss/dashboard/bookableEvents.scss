@@ -1,0 +1,48 @@
+#bookableEvents {
+  .booking-container {
+    min-height: 10.875rem;
+  }
+
+  .v-tabs {
+    border-radius: 5rem;
+    box-shadow: 3px 3px 14px 7px rgb(0 0 0 / 5%);
+
+    .v-tabs-bar {
+      height: 2.5rem;
+    }
+
+    .v-tabs-slider {
+      display: none;
+    }
+
+    .v-tab {
+      font-size: 0.75rem;
+      padding: 0 1rem;
+    }
+  }
+  .v-tabs-items {
+    background-color: unset !important;
+  }
+
+  .event-container {
+    margin: 1rem 1rem;
+  }
+
+  .event-wrapper {
+    width: 50%;
+    padding: 0 1rem;
+  }
+
+  .v-window__container {
+    // height: 4.875rem !important;
+  }
+
+  .page-selector {
+    width: 13rem;
+    margin: auto;
+    margin-top: -2.5rem;
+    .page-dots {
+      margin-bottom: -.5rem;
+    }
+  }
+}

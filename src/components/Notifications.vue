@@ -35,7 +35,7 @@ import { removeEvent } from "../schedule/events";
 import { addEvent } from "../schedule/events";
 
 export default {
-  name: "Dashboard",
+  name: "Notifications",
 
   components: {
     //

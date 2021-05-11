@@ -19,7 +19,7 @@
     line-height: 1rem;
     margin-top: 1.2rem;
   }
-  p {
+  .subHeadline {
     font-size: 0.7rem;
     margin-top: 0.2rem;
   }
@@ -46,58 +46,9 @@
       background-color: #FF4040;
     }
 
-    .event {
-      .row {
-        margin: 0;
-      }
+    // @import url(../elements/event.scss);
+    
 
-      .event-content {
-        background-color: #fff;
-        border-radius: 1rem;
-        // box-shadow: 3px 3px 14px 7px rgb(0 0 0 / 5%);
-        margin-bottom: 1rem;
-        align-items: center;
-      }
-
-      p {
-        margin: 0;
-        &.time {
-          font-size: 0.6rem;
-          margin-top: 0.5rem;
-        }
-        &.name {
-          font-size: 0.8rem;
-        }
-        &.location {
-          font-size: 0.6rem;
-          margin-bottom: 0.5rem;
-          img {
-            height: 0.5rem;
-            padding-right: 0.1rem;
-          }
-        }
-      }
-
-      .icon {
-        height: 2.5rem;
-        width: 2.5rem;
-        padding: 0.6rem;
-        border-radius: 3rem;
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
-        margin-top: 0.5rem;
-        background-color: #b9eab0;
-      }
-      &.type-event .icon {
-        background-color: #b9eab0;
-      }
-      &.type-meal .icon {
-        background-color: #feeab6;
-      }
-      &.type-arrival .icon,
-      &.type-boarding .icon {
-        background-color: #fbae97;
-      }
-    }
+    //
   }
 }

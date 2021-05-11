@@ -3,9 +3,9 @@
     <Notifications ref="notifications"></Notifications>
 
     <div id="waves">
-      <vue-wavify fill="#67B1EA" speed="0.1" amplitude="50" points="7"></vue-wavify>
-      <vue-wavify fill="#43A9EC" speed="0.2" amplitude="30" points="3"></vue-wavify>
-      <vue-wavify fill="#94CFE9" speed="0.15" amplitude="40" points="5"></vue-wavify>
+      <vue-wavify fill="#67B1EA" :speed="0.1" :amplitude="50" :points="7"></vue-wavify>
+      <vue-wavify fill="#43A9EC" :speed="0.2" :amplitude="30" :points="3"></vue-wavify>
+      <vue-wavify fill="#94CFE9" :speed="0.15" :amplitude="40" :points="5"></vue-wavify>
     </div>
 
     <div id="dashboard-content">
@@ -16,17 +16,8 @@
           </v-row>
           <v-row id="main-content" :class="'expand-' + expanded">
             <Entertainment :class="{ expand: expanded == 0 }"></Entertainment>
-            <CabinControl 
-                :class="{ expand: expanded == 1 }" 
-                @expand="expand(1)" @shrink="shrink()" 
-                @expandSize="setExpandSize"
-            ></CabinControl>
-            <Events 
-                :class="{ expand: expanded == 2 }" 
-                @expand="expand(2)" 
-                @shrink="shrink()" 
-                @expandSize="setExpandSize"
-            ></Events>
+            <CabinControl :class="{ expand: expanded == 1 }" @expand="expand(1)" @shrink="shrink()" @expandSize="setExpandSize"></CabinControl>
+            <Events :class="{ expand: expanded == 2 }" @expand="expand(2)" @shrink="shrink()" @expandSize="setExpandSize"></Events>
           </v-row>
           <Footer></Footer>
         </v-col>
@@ -52,6 +43,13 @@ import Velocity from "velocity-animate";
 
 export default {
   name: "Dashboard",
+
+  props: {
+    date: {
+      fill: Number,
+      amplitude: Number,
+    },
+  },
 
   components: {
     Header,

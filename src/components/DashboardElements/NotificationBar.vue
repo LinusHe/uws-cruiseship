@@ -1,32 +1,11 @@
 <template>
   <v-container id="notificationBar">
     <h3 align="center">Today's Schedule</h3>
-    <p align="center">Timetable and booked Events</p>
+    <p class="subHeadline" align="center">Timetable and booked Events</p>
 
     <v-window class="event-container" v-model="currentPage" vertical>
       <v-window-item v-for="page in pages()" :key="page">
-        <div class="event" v-for="event in pageEvents()" :key="event.name" :class="'type-' + event.type">
-          <v-row class="event-content">
-            <v-col class="flex-grow-0">
-              <img class="icon" :src="require(`@/assets/img/icon/notifications/${event.icon}`)" alt="" />
-            </v-col>
-            <v-col>
-              <v-row>
-                <p class="time">{{ event.time }}</p>
-              </v-row>
-              <v-row>
-                <p class="name">{{ event.name }}</p>
-              </v-row>
-              <v-row>
-                <p class="location">
-                  <img class="pin" src="../../assets/img/icon/dashboard/pin.svg" alt="" />
-                  {{ event.location }}
-                </p>
-              </v-row>
-            </v-col>
-          </v-row>
-          <div class="badge" v-if="event.type == 'arrival' || event.type == 'boarding'"></div>
-        </div>
+        <EventElement v-for="event in pageEvents()" :key="event.name" :currentEvent="event" type="notification"></EventElement>
       </v-window-item>
     </v-window>
 
@@ -54,12 +33,13 @@
 
 <script>
 import { eventData } from "../../schedule/events";
+import EventElement from "./EventElement";
 
 export default {
   name: "NotificationBar",
 
   components: {
-    //
+    EventElement,
   },
 
   data: () => ({
