@@ -8,7 +8,7 @@
 
     <v-row align-content="center" class="mt-0">
       <v-container class="booking-container">
-        <v-tabs @change="resetTab" v-model="tab" align-with-title>
+        <v-tabs @change="resetTab" fixed-tabs v-model="tab" align-with-title>
           <v-tab v-for="item in weekdays" :key="item">
             {{ item }}
           </v-tab>

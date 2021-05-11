@@ -1,3 +1,14 @@
+.v-application--is-ltr .v-tabs--align-with-title > .v-tabs-bar:not(.v-tabs-bar--show-arrows):not(.v-slide-group--is-overflowing) > .v-slide-group__wrapper > .v-tabs-bar__content > .v-tab:first-child,
+.v-application--is-ltr
+  .v-tabs--align-with-title
+  > .v-tabs-bar:not(.v-tabs-bar--show-arrows):not(.v-slide-group--is-overflowing)
+  > .v-slide-group__wrapper
+  > .v-tabs-bar__content
+  > .v-tabs-slider-wrapper
+  + .v-tab {
+  margin: 0;
+}
+
 #bookableEvents {
   .booking-container {
     min-height: 10.875rem;
@@ -18,7 +29,14 @@
 
     .v-tab {
       font-size: 0.75rem;
-      padding: 0 1rem;
+      padding: 0 0.5rem;
+      min-width: 4.625rem;
+      max-width: 22.5rem;
+    }
+
+    .v-slide-group__prev,
+    .v-slide-group__next {
+      display: none;
     }
   }
   .v-tabs-items {
@@ -43,7 +61,7 @@
     margin: auto;
     margin-top: -2.5rem;
     .page-dots {
-      margin-bottom: -.5rem;
+      margin-bottom: -0.5rem;
     }
   }
 }
