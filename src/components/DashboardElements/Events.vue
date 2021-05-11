@@ -40,7 +40,7 @@
       </v-row>
     </div>
 
-    <BookableEvents v-if="bookable" @close="close(0)"></BookableEvents>
+    <BookableEvents v-if="bookable" @close="close(0)" @book="getBookingData"></BookableEvents>
     <BookedEvents v-if="booked" @close="close(1)"></BookedEvents>
   </v-container>
 </template>
@@ -81,6 +81,9 @@ export default {
       this.$nextTick(function() {
         this.$emit("shrink");
       });
+    },
+    getBookingData(data) {
+      this.$emit("book", data);
     },
   },
 };

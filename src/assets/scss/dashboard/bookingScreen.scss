@@ -1,0 +1,68 @@
+#bookingScreen {
+  color: #162346;
+  background-color: #fff;
+  width: 20rem;
+  border-radius: 2rem;
+  padding: 2rem;
+
+  .btn-close {
+      position: absolute;
+      left: 17rem;
+      top: 1rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .event-wrapper {
+    margin-top: 1rem;
+    width: 90%;
+    border-radius: 1rem;
+
+    .event {
+      box-shadow: 3px 3px 14px 7px rgb(0 0 0 / 10%);
+      border-radius: 1rem;
+    }
+  }
+
+  .slot-container {
+    background-color: #fff;
+    margin-top: 1rem;
+    max-width: 70%;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 14px 5px rgb(0 0 0 / 10%);
+    padding: 2rem;
+
+    .control-row {
+      align-items: center;
+      margin-top: 0;
+    }
+
+    .number {
+      width: 2rem;
+      text-align: center;
+      margin: 0 0.7rem;
+      border-radius: 0.4rem;
+      font-size: 3rem;
+    }
+
+    em {
+        margin-top: .7rem;
+        font-size: .7rem;
+    }
+  }
+
+  .book-button {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      font-size: 1rem;
+      height: 2.75rem;
+      i {
+        margin-right: .5rem;
+        font-size: 1.5rem;
+      }
+  }
+}

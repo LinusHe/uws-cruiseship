@@ -24,7 +24,7 @@
           </v-row>
         </v-col>
         <v-col v-if="type == 'bookable'" class="flex-grow-0">
-          <v-btn depressed class="side-button" color="#A2E19D">
+          <v-btn @click="$emit('eventDetails')" depressed class="side-button" color="#A2E19D">
               <v-icon color="#162346">mdi-star-plus</v-icon><p>book</p>
           </v-btn>
         </v-col>

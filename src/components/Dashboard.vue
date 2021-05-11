@@ -17,13 +17,16 @@
           <v-row id="main-content" :class="'expand-' + expanded">
             <Entertainment :class="{ expand: expanded == 0 }"></Entertainment>
             <CabinControl :class="{ expand: expanded == 1 }" @expand="expand(1)" @shrink="shrink()" @expandSize="setExpandSize"></CabinControl>
-            <Events :class="{ expand: expanded == 2 }" @expand="expand(2)" @shrink="shrink()" @expandSize="setExpandSize"></Events>
+            <Events :class="{ expand: expanded == 2 }" @book="getBookingData" @expand="expand(2)" @shrink="shrink()" @expandSize="setExpandSize"></Events>
           </v-row>
           <Footer></Footer>
         </v-col>
         <v-col sm="3" class="sidebar">
           <NotificationBar ref="notificationBar"></NotificationBar>
         </v-col>
+        <v-overlay dark="false" absolute :value="booking.dialog">
+          <BookingScreen @close="booking.dialog = false" :booking="booking"></BookingScreen>
+        </v-overlay>
       </v-row>
     </div>
   </v-container>
@@ -37,6 +40,7 @@ import Events from "./DashboardElements/Events";
 import NotificationBar from "./DashboardElements/NotificationBar";
 import Footer from "./DashboardElements/Footer";
 import Notifications from "./Notifications.vue";
+import BookingScreen from "./DashboardElements/BookingScreen";
 
 import $ from "jquery";
 import Velocity from "velocity-animate";
@@ -44,12 +48,7 @@ import Velocity from "velocity-animate";
 export default {
   name: "Dashboard",
 
-  props: {
-    date: {
-      fill: Number,
-      amplitude: Number,
-    },
-  },
+  props: {},
 
   components: {
     Header,
@@ -59,11 +58,15 @@ export default {
     NotificationBar,
     Footer,
     Notifications,
+    BookingScreen,
   },
 
   data: () => ({
     expanded: -1,
     expandSize: "xl",
+    booking: {
+      dialog: false,
+    },
   }),
 
   mounted() {
@@ -80,6 +83,9 @@ export default {
     },
     setExpandSize(value) {
       this.expandSize = value;
+    },
+    getBookingData(data) {
+      this.booking = data;
     },
   },
 };

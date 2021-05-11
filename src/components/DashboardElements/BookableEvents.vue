@@ -19,7 +19,7 @@
             <v-window v-model="currentPage">
               <v-window-item v-for="page in pages()" :key="page">
                 <v-row class="event-container">
-                  <EventElement v-for="event in pageEvents()" :key="event.name" :currentEvent="event" type="bookable"></EventElement>
+                  <EventElement v-for="event in pageEvents()" :key="event.name" :currentEvent="event" @eventDetails="openBooking(event)" type="bookable"></EventElement>
                 </v-row>
               </v-window-item>
             </v-window>
@@ -27,6 +27,7 @@
         </v-tabs-items>
       </v-container>
     </v-row>
+
     <!-- Page Selector -->
     <div class="page-selector">
       <v-row justify="center">
@@ -46,6 +47,9 @@
         </v-btn>
       </v-row>
     </div>
+
+    <!-- Booking Screen -->
+    <!-- <BookingScreen :booking="booking"></BookingScreen> -->
   </v-container>
 </template>
 
@@ -55,12 +59,14 @@ import Velocity from "velocity-animate";
 import { available } from "../../schedule/availableEvents";
 
 import EventElement from "./EventElement";
+// import BookingScreen from "./BookingScreen";
 
 export default {
   name: "BookableEvents",
 
   components: {
     EventElement,
+    // BookingScreen,
   },
 
   created: function() {
@@ -80,6 +86,7 @@ export default {
     currentPage: 0,
     currentElement: 0,
     perPage: 2,
+    booking: { event: {}, dialog: false },
   }),
 
   methods: {
@@ -128,7 +135,12 @@ export default {
     resetTab() {
       this.currentPage = 0;
       this.currentElement = 0;
-    }
+    },
+    openBooking(event) {
+      this.booking.event = event;
+      this.booking.dialog = true;
+      this.$emit("book", this.booking);
+    },
   },
 };
 </script>
