@@ -1,6 +1,7 @@
 #bookableEvents {
   .booking-container {
     min-height: 10.875rem;
+    padding-top: 0.2rem;
   }
 
   .v-tabs {
@@ -8,7 +9,7 @@
     box-shadow: 3px 3px 14px 7px rgb(0 0 0 / 5%);
 
     .v-tabs-bar {
-      height: 2.5rem;
+      height: 2.3rem;
     }
 
     .v-tabs-slider {

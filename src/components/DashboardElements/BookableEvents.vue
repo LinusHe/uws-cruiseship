@@ -8,7 +8,7 @@
 
     <v-row align-content="center" class="mt-0">
       <v-container class="booking-container">
-        <v-tabs v-model="tab" align-with-title>
+        <v-tabs @change="resetTab" v-model="tab" align-with-title>
           <v-tab v-for="item in weekdays" :key="item">
             {{ item }}
           </v-tab>
@@ -28,24 +28,24 @@
       </v-container>
     </v-row>
     <!-- Page Selector -->
-            <div class="page-selector">
-              <v-row justify="center">
-                <v-item-group v-model="currentPage" class="text-center page-dots" mandatory>
-                  <v-item v-for="n in pages()" :key="`btn-${n}`" v-slot="{ active }">
-                    <v-icon :class="active ? 'selected' : ''">mdi-record</v-icon>
-                  </v-item>
-                </v-item-group>
-              </v-row>
-              <v-row class="button-group" justify="space-between">
-                <v-btn fab x-small class="myfab" elevation="0" color="#162346" @click="prev" :disabled="currentPage == 0">
-                  <v-icon color="white">mdi-chevron-left</v-icon>
-                </v-btn>
-                <p>Page {{ currentPage + 1 }} of {{ pages().length }}</p>
-                <v-btn fab x-small class="myfab" elevation="0" color="#162346" @click="next" :disabled="currentPage == pages().length - 1">
-                  <v-icon color="white">mdi-chevron-right</v-icon>
-                </v-btn>
-              </v-row>
-            </div>
+    <div class="page-selector">
+      <v-row justify="center">
+        <v-item-group v-model="currentPage" class="text-center page-dots" mandatory>
+          <v-item v-for="n in pages()" :key="`btn-${n}`" v-slot="{ active }">
+            <v-icon :class="active ? 'selected' : ''">mdi-record</v-icon>
+          </v-item>
+        </v-item-group>
+      </v-row>
+      <v-row class="button-group" justify="space-between">
+        <v-btn fab x-small class="myfab" elevation="0" color="#162346" @click="prev" :disabled="currentPage == 0">
+          <v-icon color="white">mdi-chevron-left</v-icon>
+        </v-btn>
+        <p>Page {{ currentPage + 1 }} of {{ pages().length }}</p>
+        <v-btn fab x-small class="myfab" elevation="0" color="#162346" @click="next" :disabled="currentPage == pages().length - 1">
+          <v-icon color="white">mdi-chevron-right</v-icon>
+        </v-btn>
+      </v-row>
+    </div>
   </v-container>
 </template>
 
@@ -125,6 +125,10 @@ export default {
       this.currentElement = this.currentElement - this.perPage;
       this.currentPage = this.currentPage - 1;
     },
+    resetTab() {
+      this.currentPage = 0;
+      this.currentElement = 0;
+    }
   },
 };
 </script>
