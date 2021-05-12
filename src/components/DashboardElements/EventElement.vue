@@ -19,7 +19,7 @@
             <p class="location">
               <img class="pin" src="../../assets/img/icon/dashboard/pin.svg" alt="" />
               {{ currentEvent.location }}
-              <span class="freeSlots" v-if="type == 'bookable'">{{ currentEvent.slotsFree }} Slot<span v-if="currentEvent.slotsFree > 1">s</span> available</span>
+              <span class="freeSlots" v-if="type == 'bookable' || type == 'slotSelection'">{{ currentEvent.slotsFree }} Slot<span v-if="currentEvent.slotsFree > 1">s</span> available</span>
               <span class="bookedSlots" v-if="type == 'booked'">{{ currentEvent.slotsBooked }} Slot<span v-if="currentEvent.slotsBooked > 1">s</span> booked</span>
             </p>
           </v-row>

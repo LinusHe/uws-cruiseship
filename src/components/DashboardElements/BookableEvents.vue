@@ -104,7 +104,7 @@ export default {
       this.weekdays[0] = "Today";
     },
     getAvailableEvents() {
-      return available.filter((el) => el.booked == false);
+      return available.filter((el) => el.booked == false && el.slotsFree > 0);
     },
     getDayEvents() {
       if (this.tab == 0) return this.getAvailableEvents().filter((el) => el.date == this.today);

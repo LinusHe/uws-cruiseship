@@ -41,7 +41,7 @@
     </div>
 
     <BookableEvents v-if="bookable" @close="close(0)" @book="getBookingData"></BookableEvents>
-    <BookedEvents v-if="booked" @close="close(1)"></BookedEvents>
+    <BookedEvents v-if="booked" @close="close(1)" @book="getBookingData"></BookedEvents>
   </v-container>
 </template>
 
