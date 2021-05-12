@@ -19,13 +19,19 @@
             <p class="location">
               <img class="pin" src="../../assets/img/icon/dashboard/pin.svg" alt="" />
               {{ currentEvent.location }}
-              <span class="freeSlots" v-if="type != 'notification'">{{ currentEvent.slotsFree }} Slots available</span>
+              <span class="freeSlots" v-if="type == 'bookable'">{{ currentEvent.slotsFree }} Slot<span v-if="currentEvent.slotsFree > 1">s</span> available</span>
+              <span class="bookedSlots" v-if="type == 'booked'">{{ currentEvent.slotsBooked }} Slot<span v-if="currentEvent.slotsBooked > 1">s</span> booked</span>
             </p>
           </v-row>
         </v-col>
         <v-col v-if="type == 'bookable'" class="flex-grow-0">
           <v-btn @click="$emit('eventDetails')" depressed class="side-button" color="#A2E19D">
               <v-icon color="#162346">mdi-star-plus</v-icon><p>book</p>
+          </v-btn>
+        </v-col>
+        <v-col v-if="type == 'booked'" class="flex-grow-0">
+          <v-btn @click="$emit('eventDetails')" depressed class="side-button" color="#feeab6">
+              <v-icon color="#162346">mdi-checkbox-marked-circle-outline</v-icon><p>booked</p>
           </v-btn>
         </v-col>
       </v-row>

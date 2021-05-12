@@ -9,7 +9,7 @@
   margin: 0;
 }
 
-#bookableEvents {
+.event-section {
   .booking-container {
     min-height: 10.875rem;
     padding-top: 0.2rem;
@@ -63,5 +63,12 @@
     .page-dots {
       margin-bottom: -0.5rem;
     }
+  }
+}
+
+
+#bookedEvents {
+  .side-button {
+    font-size: .7rem;
   }
 }

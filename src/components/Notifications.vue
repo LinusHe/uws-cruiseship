@@ -30,9 +30,9 @@
 
 <script>
 import changeData from "../schedule/changes";
-import { updateEvent } from "../schedule/events";
-import { removeEvent } from "../schedule/events";
-import { addEvent } from "../schedule/events";
+import { updateEvent } from "../schedule/schedule";
+import { removeEvent } from "../schedule/schedule";
+import { addEvent } from "../schedule/schedule";
 
 export default {
   name: "Notifications",

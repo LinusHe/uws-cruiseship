@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import { eventData } from "../../schedule/events";
+import { eventData } from "../../schedule/schedule";
 import EventElement from "./EventElement";
 
 export default {

@@ -1,5 +1,5 @@
 <template>
-  <v-container id="bookableEvents">
+  <v-container id="bookableEvents" class="event-section">
     <v-btn @click="close()" fab x-small elevation="0" class="myfab btn-close" color="#162346"><v-icon color="white">mdi-close</v-icon> </v-btn>
 
     <v-row justify="center">
