@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70.333" height="70.333" viewBox="0 0 70.333 70.333">
+  <defs>
+    <filter id="Pfad_7" x="0" y="0" width="70.333" height="70.333" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="metrics" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Pfad_7)">
+      <path id="Pfad_7-2" data-name="Pfad 7" d="M7.978,2A2.327,2.327,0,0,0,5.652,4.326V36.984a9.3,9.3,0,1,0,12.7,12.7H51.007a2.327,2.327,0,0,0,2.326-2.326A45.406,45.406,0,0,0,7.978,2Z" transform="translate(8 4)" fill="#fff"/>
+    </g>
+    <path id="Pfad_8" data-name="Pfad 8" d="M9.651,45.692a4.651,4.651,0,0,1-3.289-7.941c1.258-1.258,10.593-7.482,16.048-11.079a1.163,1.163,0,0,1,1.612,1.611c-3.6,5.455-9.827,14.8-11.081,16.048A4.627,4.627,0,0,1,9.651,45.692Z" transform="translate(-0.348 1.989)" fill="#e86c60"/>
+    <path id="Pfad_9" data-name="Pfad 9" d="M41.13,39.106A1.164,1.164,0,0,1,40,38.2,35.051,35.051,0,0,0,13.9,12.1a1.162,1.162,0,1,1,.522-2.265,37.386,37.386,0,0,1,27.84,27.847,1.163,1.163,0,0,1-.871,1.394A1.125,1.125,0,0,1,41.13,39.106Z" transform="translate(0.955 -0.728)" fill="#444"/>
+    <path id="Pfad_10" data-name="Pfad 10" d="M31.5,21.765a1.16,1.16,0,0,1-.822-.341A34.767,34.767,0,0,0,13.9,12.1a1.164,1.164,0,0,1,.522-2.268,37.094,37.094,0,0,1,17.9,9.947,1.164,1.164,0,0,1-.822,1.986Z" transform="translate(0.955 -0.728)" fill="#72c472"/>
+  </g>
+</svg>

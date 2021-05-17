@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37.837" height="37.837" viewBox="0 0 37.837 37.837">
+  <g id="support" transform="translate(-6.422 -6.422)">
+    <line id="Linie_1" data-name="Linie 1" x1="7.178" y1="7.178" transform="translate(7.732 22.082) rotate(-45)" fill="none" stroke="#75809e" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Linie_2" data-name="Linie 2" x2="7.179" y2="7.178" transform="translate(7.732 28.598) rotate(-45)" fill="none" stroke="#75809e" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Linie_3" data-name="Linie 3" y1="7.178" x2="7.178" transform="translate(23.523 12.807) rotate(-45)" fill="none" stroke="#75809e" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Linie_4" data-name="Linie 4" x1="7.178" y2="7.179" transform="translate(17.007 12.807) rotate(-45)" fill="none" stroke="#75809e" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Linie_5" data-name="Linie 5" x2="7.178" y2="7.178" transform="translate(32.798 28.598) rotate(-45)" fill="none" stroke="#75809e" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Linie_6" data-name="Linie 6" x1="7.179" y1="7.178" transform="translate(32.798 22.083) rotate(-45)" fill="none" stroke="#75809e" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Linie_7" data-name="Linie 7" x1="7.178" y2="7.178" transform="translate(17.007 37.874) rotate(-45)" fill="none" stroke="#75809e" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Linie_8" data-name="Linie 8" y1="7.179" x2="7.178" transform="translate(23.523 37.873) rotate(-45)" fill="none" stroke="#75809e" stroke-miterlimit="10" stroke-width="2"/>
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="17.919" cy="17.919" r="17.919" transform="translate(7.422 43.259) rotate(-90)" fill="none" stroke="#162346" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <circle id="Ellipse_11" data-name="Ellipse 11" cx="8.145" cy="8.145" r="8.145" transform="translate(17.196 33.485) rotate(-90)" fill="none" stroke="#162346" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

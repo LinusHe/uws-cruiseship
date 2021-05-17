@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.645" height="21.565" viewBox="0 0 24.645 21.565">
+  <g id="yoga" transform="translate(0 -2)">
+    <circle id="Ellipse_19" data-name="Ellipse 19" cx="2.696" cy="2.696" r="2.696" transform="translate(9.627 2)" fill="#162346"/>
+    <path id="Pfad_65" data-name="Pfad 65" d="M20.248,25.31H7.155a1.155,1.155,0,1,1,0-2.31H20.248a1.155,1.155,0,1,1,0,2.31Z" transform="translate(-1.379 -4.827)" fill="#162346"/>
+    <path id="Pfad_66" data-name="Pfad 66" d="M23.875,29.54H.77A.77.77,0,1,1,.77,28h23.1a.77.77,0,1,1,0,1.54Z" transform="translate(0 -5.976)" fill="#162346"/>
+    <path id="Pfad_67" data-name="Pfad 67" d="M22,11.42l-2.786,1.386-3.192-2.553A1.155,1.155,0,0,0,15.3,10H10.683a1.155,1.155,0,0,0-.722.253L6.77,12.806,3.988,11.414l-1.068,1.6L6.192,15.2a1.155,1.155,0,0,0,1.362-.059l2.359-1.887v5.991h6.161V13.251l2.359,1.887A1.155,1.155,0,0,0,19.8,15.2l3.272-2.181Z" transform="translate(-0.671 -1.839)" fill="#162346"/>
+  </g>
+</svg>
