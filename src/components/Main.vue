@@ -38,7 +38,7 @@ export default {
   mounted() {},
 
   data: () => ({
-    monitorIsActive: true,
+    monitorIsActive: false,
   }),
 
   methods: {
