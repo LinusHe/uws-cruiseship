@@ -1,0 +1,16 @@
+#remote-container {
+  background-color: #fff;
+  border-radius: 3rem;
+  box-shadow: 20px 20px 40px 20px #00000025;
+  margin: 5rem;
+
+  padding-top: 1rem;
+
+  #remote {
+    margin: 2rem;
+
+    .v-image__image {
+      box-shadow: 10px 10px 10px 20px #00000025;
+    }
+  }
+}

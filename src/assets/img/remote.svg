@@ -1,0 +1,623 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="259" height="737" viewBox="0 0 259 737">
+  <defs>
+    <filter id="Shadow" x="41" y="158" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light" x="31" y="148" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-2"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="Rechteck_84" data-name="Rechteck 84" width="16" height="16" transform="translate(1.743)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="Shadow-2" x="97" y="158" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-3"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-2" x="87" y="148" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-4"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Shadow-3" x="153" y="158" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-5"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-3" x="143" y="148" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-6"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Shadow-4" x="24" y="100" width="222" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-7"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-4" x="14" y="90" width="222" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-8"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path-4">
+      <rect id="Rechteck_84-4" data-name="Rechteck 84" width="12" height="12" transform="translate(224 320)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="Shadow-5" x="97" y="22" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-9"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-5" x="87" y="12" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-10"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-10"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Shadow-6" x="24" y="241" width="222" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-11"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-11"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-6" x="14" y="231" width="222" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-12"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-12"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Shadow-7" x="41" y="538" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-13"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-13"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-7" x="31" y="528" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-14"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-14"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Shadow-8" x="41" y="596" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-15"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-15"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-8" x="31" y="586" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-16"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-16"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path-8">
+      <rect id="Rechteck_84-8" data-name="Rechteck 84" width="9" height="9" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="Shadow-9" x="97" y="538" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-17"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-17"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-9" x="87" y="528" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-18"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-18"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Shadow-10" x="97" y="596" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-19"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-19"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-10" x="87" y="586" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-20"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-20"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Shadow-11" x="153" y="538" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-21"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-21"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-11" x="143" y="528" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-22"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-22"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Shadow-12" x="153" y="596" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-23"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-23"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-12" x="143" y="586" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-24"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-24"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Shadow-13" x="24" y="392" width="61" height="136" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-25"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-25"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-13" x="14" y="382" width="61" height="136" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-26"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-26"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path-12">
+      <rect id="Rechteck_84-12" data-name="Rechteck 84" width="16" height="16" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="Shadow-14" x="185" y="392" width="61" height="136" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-27"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-27"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-14" x="175" y="382" width="61" height="136" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-28"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-28"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Shadow-15" x="77" y="402" width="116" height="116" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-29"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-29"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-15" x="67" y="392" width="116" height="116" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-30"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-30"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path-16">
+      <rect id="Rechteck_84-16" data-name="Rechteck 84" width="12" height="12" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="Shadow-16" x="41" y="299" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-31"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-31"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-16" x="31" y="289" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-32"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-32"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Shadow-17" x="97" y="299" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-33"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-33"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-17" x="87" y="289" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-34"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-34"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Shadow-18" x="153" y="299" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-35"/>
+      <feFlood flood-color="#97a7c3" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-35"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light-18" x="143" y="289" width="75" height="73" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-36"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-36"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="TV_Remote" data-name="TV Remote" transform="translate(-141 -204)">
+    <g id="Background" transform="translate(141 204)" fill="#eceff4" stroke="#eaeaee" stroke-width="1">
+      <rect width="259" height="737" rx="83" stroke="none"/>
+      <rect x="0.5" y="0.5" width="258" height="736" rx="82.5" fill="none"/>
+    </g>
+    <g id="Light_Off" data-name="Light Off" transform="translate(17 67)">
+      <g transform="matrix(1, 0, 0, 1, 124, 137)" filter="url(#Shadow)">
+        <rect id="Shadow-19" data-name="Shadow" width="39" height="37" rx="18.5" transform="translate(54 171)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 124, 137)" filter="url(#Light)">
+        <rect id="Light-19" data-name="Light" width="39" height="37" rx="18.5" transform="translate(54 171)" fill="#eceff4"/>
+      </g>
+      <rect id="Base" width="39" height="37" rx="18.5" transform="translate(178 308)" fill="#f4f5f8"/>
+      <g id="Gruppe_60" data-name="Gruppe 60" transform="translate(188.257 319)">
+        <g id="Gruppe_maskieren_27" data-name="Gruppe maskieren 27" clip-path="url(#clip-path)">
+          <g id="ic_brightness_low_24px" transform="translate(1.255 -0.488)">
+            <path id="Pfad_254" data-name="Pfad 254" d="M14.147,10.829l2.341-2.341L14.147,6.147V2.829H10.829L8.488.488,6.147,2.829H2.829V6.147L.488,8.488l2.341,2.341v3.317H6.147l2.341,2.341,2.341-2.341h3.317Zm-5.659,1.9a4.244,4.244,0,1,1,4.244-4.244A4.247,4.247,0,0,1,8.488,12.732Z" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Light_Medium" data-name="Light Medium" transform="translate(73 67)">
+      <g transform="matrix(1, 0, 0, 1, 68, 137)" filter="url(#Shadow-2)">
+        <rect id="Shadow-20" data-name="Shadow" width="39" height="37" rx="18.5" transform="translate(110 171)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 68, 137)" filter="url(#Light-2)">
+        <rect id="Light-20" data-name="Light" width="39" height="37" rx="18.5" transform="translate(110 171)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-2" data-name="Base" width="39" height="37" rx="18.5" transform="translate(178 308)" fill="#f4f5f8"/>
+      <g id="Gruppe_60-2" data-name="Gruppe 60" transform="translate(188.257 319)">
+        <g id="Gruppe_maskieren_28" data-name="Gruppe maskieren 28" clip-path="url(#clip-path)">
+          <g id="ic_brightness_medium_24px" transform="translate(1.255 -0.488)">
+            <path id="Pfad_255" data-name="Pfad 255" d="M14.147,10.829l2.341-2.341L14.147,6.147V2.829H10.829L8.488.488,6.147,2.829H2.829V6.147L.488,8.488l2.341,2.341v3.317H6.147l2.341,2.341,2.341-2.341h3.317Zm-5.659,1.9V4.244a4.244,4.244,0,1,1,0,8.488Z" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Light_Full" data-name="Light Full" transform="translate(129 67)">
+      <g transform="matrix(1, 0, 0, 1, 12, 137)" filter="url(#Shadow-3)">
+        <rect id="Shadow-21" data-name="Shadow" width="39" height="37" rx="18.5" transform="translate(166 171)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 12, 137)" filter="url(#Light-3)">
+        <rect id="Light-21" data-name="Light" width="39" height="37" rx="18.5" transform="translate(166 171)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-3" data-name="Base" width="39" height="37" rx="18.5" transform="translate(178 308)" fill="#f4f5f8"/>
+      <g id="Gruppe_60-3" data-name="Gruppe 60" transform="translate(188.257 319)">
+        <g id="Gruppe_maskieren_26" data-name="Gruppe maskieren 26" clip-path="url(#clip-path)">
+          <g id="ic_brightness_high_24px" transform="translate(1.255 -0.488)">
+            <path id="Pfad_253" data-name="Pfad 253" d="M14.147,6.147V2.829H10.829L8.488.488,6.147,2.829H2.829V6.147L.488,8.488l2.341,2.341v3.317H6.147l2.341,2.341,2.341-2.341h3.317V10.829l2.341-2.341ZM8.488,12.732a4.244,4.244,0,1,1,4.244-4.244A4.247,4.247,0,0,1,8.488,12.732Zm0-7.073a2.829,2.829,0,1,0,2.829,2.829A2.829,2.829,0,0,0,8.488,5.659Z" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Light_Control" data-name="Light Control" transform="translate(0 9)">
+      <g transform="matrix(1, 0, 0, 1, 141, 195)" filter="url(#Shadow-4)">
+        <rect id="Shadow-22" data-name="Shadow" width="186" height="37" rx="18.5" transform="translate(37 113)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 141, 195)" filter="url(#Light-4)">
+        <rect id="Light-22" data-name="Light" width="186" height="37" rx="18.5" transform="translate(37 113)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-4" data-name="Base" width="186" height="37" rx="18.5" transform="translate(178 308)" fill="#f4f5f8"/>
+      <g id="Gruppe_60-4" data-name="Gruppe 60" transform="translate(8 1)">
+        <text id="Light_Control-2" data-name="Light Control" transform="translate(271 329)" fill="#162346" font-size="9" font-family="Aileron-Regular, Aileron" letter-spacing="0.086em"><tspan x="-31.158" y="0">Light Control</tspan></text>
+        <g id="Gruppe_maskieren_25" data-name="Gruppe maskieren 25" clip-path="url(#clip-path-4)">
+          <g id="bulb-61" transform="translate(224 320)">
+            <path id="Pfad_251" data-name="Pfad 251" d="M4,8.53V10H8V8.53a4.5,4.5,0,1,0-4,0ZM3.5,4.5A2.5,2.5,0,0,1,6,2h.5V3H6A1.5,1.5,0,0,0,4.5,4.5V5h-1Z" fill="#162346"/>
+            <path id="Pfad_252" data-name="Pfad 252" d="M4,11v.5a.5.5,0,0,0,.5.5h3a.5.5,0,0,0,.5-.5V11Z" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="On_Switch" data-name="On Switch" transform="translate(73 -69)">
+      <g transform="matrix(1, 0, 0, 1, 68, 273)" filter="url(#Shadow-5)">
+        <rect id="Shadow-23" data-name="Shadow" width="39" height="37" rx="18.5" transform="translate(110 35)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 68, 273)" filter="url(#Light-5)">
+        <rect id="Light-23" data-name="Light" width="39" height="37" rx="18.5" transform="translate(110 35)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-5" data-name="Base" width="39" height="37" rx="18.5" transform="translate(178 308)" fill="#f4f5f8"/>
+      <g id="Gruppe_60-5" data-name="Gruppe 60" transform="translate(188.257 319)">
+        <g id="Gruppe_maskieren_24" data-name="Gruppe maskieren 24" clip-path="url(#clip-path)">
+          <g id="button-power" transform="translate(1.743)">
+            <path id="Pfad_249" data-name="Pfad 249" d="M11.665,2.313A.667.667,0,0,0,11,3.468a6,6,0,1,1-6,0,.666.666,0,0,0-.668-1.153,7.333,7.333,0,1,0,7.332,0Z" fill="#ee3d3d"/>
+            <path id="Pfad_250" data-name="Pfad 250" d="M8,6a.666.666,0,0,0,.667-.667V.667a.667.667,0,0,0-1.333,0V5.333A.666.666,0,0,0,8,6Z" fill="#ee3d3d"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Template_wide" data-name="Template wide" transform="translate(0 150)">
+      <g transform="matrix(1, 0, 0, 1, 141, 54)" filter="url(#Shadow-6)">
+        <rect id="Shadow-24" data-name="Shadow" width="186" height="37" rx="18.5" transform="translate(37 254)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 141, 54)" filter="url(#Light-6)">
+        <rect id="Light-24" data-name="Light" width="186" height="37" rx="18.5" transform="translate(37 254)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-6" data-name="Base" width="186" height="37" rx="18.5" transform="translate(178 308)" fill="#f4f5f8"/>
+      <g id="Gruppe_60-6" data-name="Gruppe 60" transform="translate(6 1)">
+        <text id="Clima_Control" data-name="Clima Control" transform="translate(273 329)" fill="#162346" font-size="9" font-family="Aileron-Regular, Aileron" letter-spacing="0.086em"><tspan x="-32.22" y="0">Clima Control</tspan></text>
+        <g id="Gruppe_maskieren_29" data-name="Gruppe maskieren 29" clip-path="url(#clip-path-4)">
+          <g id="temperature" transform="translate(223.997 320)">
+            <path id="Pfad_256" data-name="Pfad 256" d="M8,5.624V2A2,2,0,0,0,4,2V5.624a3.5,3.5,0,1,0,4,0ZM6,10.505a2,2,0,0,1-2-2H8A2,2,0,0,1,6,10.505Z" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Back" transform="translate(17 447)">
+      <g transform="matrix(1, 0, 0, 1, 124, -243)" filter="url(#Shadow-7)">
+        <rect id="Shadow-25" data-name="Shadow" width="39" height="37" rx="18.5" transform="translate(54 551)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 124, -243)" filter="url(#Light-7)">
+        <rect id="Light-25" data-name="Light" width="39" height="37" rx="18.5" transform="translate(54 551)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-7" data-name="Base" width="39" height="37" rx="18.5" transform="translate(178 308)" fill="#f4f5f8"/>
+      <g id="Gruppe_60-7" data-name="Gruppe 60" transform="translate(188.257 319)">
+        <g id="Gruppe_maskieren_40" data-name="Gruppe maskieren 40" clip-path="url(#clip-path)">
+          <g id="curved-arrow-left" transform="translate(1.743)">
+            <path id="Pfad_267" data-name="Pfad 267" d="M10.667.667H5.333V2h5.333a4,4,0,1,1,0,8H5.333V6L0,10.667l5.333,4.667v-4h5.333a5.333,5.333,0,0,0,0-10.667Z" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Skip_Backward" data-name="Skip Backward" transform="translate(17 505)">
+      <g transform="matrix(1, 0, 0, 1, 124, -301)" filter="url(#Shadow-8)">
+        <rect id="Shadow-26" data-name="Shadow" width="39" height="37" rx="18.5" transform="translate(54 609)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 124, -301)" filter="url(#Light-8)">
+        <rect id="Light-26" data-name="Light" width="39" height="37" rx="18.5" transform="translate(54 609)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-8" data-name="Base" width="39" height="37" rx="18.5" transform="translate(178 308)" fill="#f4f5f8"/>
+      <g id="Gruppe_60-8" data-name="Gruppe 60" transform="translate(191.257 322)">
+        <g id="Gruppe_maskieren_44" data-name="Gruppe maskieren 44" transform="translate(1.743)" clip-path="url(#clip-path-8)">
+          <g id="ic_skip_previous_24px">
+            <path id="Pfad_273" data-name="Pfad 273" d="M8,8H9.5v9H8Zm2.625,4.5L17,17V8Z" transform="translate(-8 -8)" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Home" transform="translate(73 447)">
+      <g transform="matrix(1, 0, 0, 1, 68, -243)" filter="url(#Shadow-9)">
+        <rect id="Shadow-27" data-name="Shadow" width="39" height="37" rx="18.5" transform="translate(110 551)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 68, -243)" filter="url(#Light-9)">
+        <rect id="Light-27" data-name="Light" width="39" height="37" rx="18.5" transform="translate(110 551)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-9" data-name="Base" width="39" height="37" rx="18.5" transform="translate(178 308)" fill="#f4f5f8"/>
+      <g id="Gruppe_60-9" data-name="Gruppe 60" transform="translate(188.257 319)">
+        <g id="Gruppe_maskieren_41" data-name="Gruppe maskieren 41" clip-path="url(#clip-path)">
+          <g id="home-2" data-name="home" transform="translate(1.743)">
+            <path id="Pfad_268" data-name="Pfad 268" d="M15.755,6.817l-7.333-6a.667.667,0,0,0-.844,0l-7.333,6a.667.667,0,1,0,.844,1.032L2,7.1v7.563a.667.667,0,0,0,.667.667h4v-4H9.333v4h4A.667.667,0,0,0,14,14.667V7.1l.911.745a.667.667,0,1,0,.844-1.032Z" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Play_Pause" data-name="Play Pause" transform="translate(73 505)">
+      <g transform="matrix(1, 0, 0, 1, 68, -301)" filter="url(#Shadow-10)">
+        <rect id="Shadow-28" data-name="Shadow" width="39" height="37" rx="18.5" transform="translate(110 609)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 68, -301)" filter="url(#Light-10)">
+        <rect id="Light-28" data-name="Light" width="39" height="37" rx="18.5" transform="translate(110 609)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-10" data-name="Base" width="39" height="37" rx="18.5" transform="translate(178 308)" fill="#f4f5f8"/>
+      <g id="ic_play_arrow_24px" transform="translate(190.084 322.542)">
+        <path id="Pfad_270" data-name="Pfad 270" d="M8,5v7.916l6.219-3.958Z" transform="translate(-8 -5)" fill="#162346"/>
+      </g>
+      <g id="ic_pause_24px" transform="translate(198.131 322.542)">
+        <path id="Pfad_271" data-name="Pfad 271" d="M6,12.916H8.262V5H6ZM10.523,5v7.916h2.262V5Z" transform="translate(-6 -5)" fill="#162346"/>
+      </g>
+    </g>
+    <g id="Info" transform="translate(129 447)">
+      <g transform="matrix(1, 0, 0, 1, 12, -243)" filter="url(#Shadow-11)">
+        <rect id="Shadow-29" data-name="Shadow" width="39" height="37" rx="18.5" transform="translate(166 551)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 12, -243)" filter="url(#Light-11)">
+        <rect id="Light-29" data-name="Light" width="39" height="37" rx="18.5" transform="translate(166 551)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-11" data-name="Base" width="39" height="37" rx="18.5" transform="translate(178 308)" fill="#f4f5f8"/>
+      <g id="Gruppe_60-10" data-name="Gruppe 60" transform="translate(188.257 319)">
+        <g id="Gruppe_maskieren_42" data-name="Gruppe maskieren 42" clip-path="url(#clip-path)">
+          <g id="c-info" transform="translate(1.743)">
+            <path id="Pfad_269" data-name="Pfad 269" d="M8,0a8,8,0,1,0,8,8A8.009,8.009,0,0,0,8,0ZM9.772,12.189c-.441.173-1.968.9-2.848.127a1.117,1.117,0,0,1-.393-.879A10.652,10.652,0,0,1,7.143,8.8,3.8,3.8,0,0,0,7.3,7.925c0-.467-.177-.591-.658-.591a2.207,2.207,0,0,0-.73.171l.13-.533A5.093,5.093,0,0,1,7.787,6.5c.846,0,1.469.422,1.469,1.225a3.724,3.724,0,0,1-.124.917l-.487,1.721c-.1.348-.283,1.115,0,1.343A1.476,1.476,0,0,0,9.9,11.657Zm-.8-6.856a1,1,0,1,1,1-1A1,1,0,0,1,8.968,5.333Z" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Skip_Forward" data-name="Skip Forward" transform="translate(129 505)">
+      <g transform="matrix(1, 0, 0, 1, 12, -301)" filter="url(#Shadow-12)">
+        <rect id="Shadow-30" data-name="Shadow" width="39" height="37" rx="18.5" transform="translate(166 609)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 12, -301)" filter="url(#Light-12)">
+        <rect id="Light-30" data-name="Light" width="39" height="37" rx="18.5" transform="translate(166 609)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-12" data-name="Base" width="39" height="37" rx="18.5" transform="translate(178 308)" fill="#f4f5f8"/>
+      <g id="Gruppe_60-11" data-name="Gruppe 60" transform="translate(187.257 322)">
+        <g id="Gruppe_maskieren_43" data-name="Gruppe maskieren 43" transform="translate(5.743)" clip-path="url(#clip-path-8)">
+          <g id="ic_skip_next_24px">
+            <path id="Pfad_272" data-name="Pfad 272" d="M8,17l6.375-4.5L8,8Zm7.5-9v9H17V8Z" transform="translate(-8 -8)" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Ch_Switch" data-name="Ch Switch" transform="translate(0 301.051)">
+      <g transform="matrix(1, 0, 0, 1, 141, -97.05)" filter="url(#Shadow-13)">
+        <rect id="Shadow-31" data-name="Shadow" width="25" height="100" rx="12.5" transform="translate(37 405)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 141, -97.05)" filter="url(#Light-13)">
+        <rect id="Light-31" data-name="Light" width="25" height="100" rx="12.5" transform="translate(37 405)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-13" data-name="Base" width="25" height="100" rx="12.5" transform="translate(178 307.949)" fill="#f4f5f8"/>
+      <g id="Gruppe_62" data-name="Gruppe 62" transform="translate(182.72 312.949)">
+        <g id="Gruppe_maskieren_38" data-name="Gruppe maskieren 38" clip-path="url(#clip-path-12)">
+          <g id="triangle-up" transform="translate(0 2.409)">
+            <path id="Pfad_265" data-name="Pfad 265" d="M10.24,3.52a.829.829,0,0,0-1.28,0l-7.2,9.6A.8.8,0,0,0,2.4,14.4H16.8a.8.8,0,0,0,.64-1.28Z" transform="translate(-1.6 -3.218)" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+      <g id="Gruppe_63" data-name="Gruppe 63" transform="translate(182.696 385.949)">
+        <g id="Gruppe_maskieren_39" data-name="Gruppe maskieren 39" clip-path="url(#clip-path-12)">
+          <g id="triangle-down" transform="translate(0 2.409)">
+            <path id="Pfad_266" data-name="Pfad 266" d="M8.96,15.68a.829.829,0,0,0,1.28,0l7.2-9.6A.8.8,0,0,0,16.8,4.8H2.4a.8.8,0,0,0-.64,1.28Z" transform="translate(-1.6 -4.8)" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+      <text id="Ch" transform="translate(190.72 358.949)" fill="#162346" font-size="9" font-family="Aileron-Regular, Aileron" letter-spacing="0.086em"><tspan x="-6.201" y="0">Ch</tspan></text>
+    </g>
+    <g id="Vol_Switch" data-name="Vol Switch" transform="translate(161 301.051)">
+      <g transform="matrix(1, 0, 0, 1, -20, -97.05)" filter="url(#Shadow-14)">
+        <rect id="Shadow-32" data-name="Shadow" width="25" height="100" rx="12.5" transform="translate(198 405)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -20, -97.05)" filter="url(#Light-14)">
+        <rect id="Light-32" data-name="Light" width="25" height="100" rx="12.5" transform="translate(198 405)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-14" data-name="Base" width="25" height="100" rx="12.5" transform="translate(178 307.949)" fill="#f4f5f8"/>
+      <g id="Gruppe_62-2" data-name="Gruppe 62" transform="translate(182.72 312.949)">
+        <g id="Gruppe_maskieren_38-2" data-name="Gruppe maskieren 38" clip-path="url(#clip-path-12)">
+          <g id="triangle-up-2" data-name="triangle-up" transform="translate(0 2.409)">
+            <path id="Pfad_265-2" data-name="Pfad 265" d="M10.24,3.52a.829.829,0,0,0-1.28,0l-7.2,9.6A.8.8,0,0,0,2.4,14.4H16.8a.8.8,0,0,0,.64-1.28Z" transform="translate(-1.6 -3.218)" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+      <g id="Gruppe_63-2" data-name="Gruppe 63" transform="translate(182.696 385.949)">
+        <g id="Gruppe_maskieren_39-2" data-name="Gruppe maskieren 39" clip-path="url(#clip-path-12)">
+          <g id="triangle-down-2" data-name="triangle-down" transform="translate(0 2.409)">
+            <path id="Pfad_266-2" data-name="Pfad 266" d="M8.96,15.68a.829.829,0,0,0,1.28,0l7.2-9.6A.8.8,0,0,0,16.8,4.8H2.4a.8.8,0,0,0-.64,1.28Z" transform="translate(-1.6 -4.8)" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+      <text id="Vol" transform="translate(190.72 358.949)" fill="#162346" font-size="9" font-family="Aileron-Regular, Aileron" letter-spacing="0.086em"><tspan x="-7.213" y="0">Vol</tspan></text>
+    </g>
+    <g id="Main_Switch" data-name="Main Switch" transform="translate(53 311.051)">
+      <g transform="matrix(1, 0, 0, 1, 88, -107.05)" filter="url(#Shadow-15)">
+        <rect id="Shadow-33" data-name="Shadow" width="80" height="80" rx="40" transform="translate(90 415)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 88, -107.05)" filter="url(#Light-15)">
+        <rect id="Light-33" data-name="Light" width="80" height="80" rx="40" transform="translate(90 415)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-15" data-name="Base" width="80" height="80" rx="40" transform="translate(178 307.949)" fill="#f4f5f8"/>
+      <g id="Gruppe_62-3" data-name="Gruppe 62" transform="translate(212 311.139)">
+        <g id="Gruppe_maskieren_35" data-name="Gruppe maskieren 35" clip-path="url(#clip-path-16)">
+          <g id="triangle-up-3" data-name="triangle-up" transform="translate(-1.2 -0.606)">
+            <path id="Pfad_262" data-name="Pfad 262" d="M7.68,2.64a.622.622,0,0,0-.96,0l-5.4,7.2a.6.6,0,0,0,.48.96H12.6a.6.6,0,0,0,.48-.96Z" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+      <g id="Gruppe_63-3" data-name="Gruppe 63" transform="translate(212 372.758)">
+        <g id="Gruppe_maskieren_36" data-name="Gruppe maskieren 36" clip-path="url(#clip-path-16)">
+          <g id="triangle-down-3" data-name="triangle-down" transform="translate(-1.2 -1.793)">
+            <path id="Pfad_263" data-name="Pfad 263" d="M6.72,11.76a.622.622,0,0,0,.96,0l5.4-7.2a.6.6,0,0,0-.48-.96H1.8a.6.6,0,0,0-.48.96Z" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+      <g id="Gruppe_64" data-name="Gruppe 64" transform="translate(212 341.949)">
+        <g id="Gruppe_maskieren_37" data-name="Gruppe maskieren 37" clip-path="url(#clip-path-16)">
+          <g id="radio-btn-checked">
+            <path id="Pfad_264" data-name="Pfad 264" d="M6,0a6,6,0,1,0,6,6A6,6,0,0,0,6,0ZM6,8.5A2.5,2.5,0,1,1,8.5,6,2.5,2.5,0,0,1,6,8.5Z" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+      <g id="Gruppe_65" data-name="Gruppe 65" transform="translate(181 341.949)">
+        <g id="Gruppe_maskieren_34" data-name="Gruppe maskieren 34" clip-path="url(#clip-path-16)">
+          <g id="triangle-left" transform="translate(-0.599 -1.202)">
+            <path id="Pfad_261" data-name="Pfad 261" d="M10.467,1.263a.6.6,0,0,0-.628.06l-7.2,5.4a.6.6,0,0,0,0,.96l7.2,5.4a.6.6,0,0,0,.96-.483V1.8A.6.6,0,0,0,10.467,1.263Z" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+      <g id="Gruppe_66" data-name="Gruppe 66" transform="translate(243 341.949)">
+        <g id="Gruppe_maskieren_33" data-name="Gruppe maskieren 33" clip-path="url(#clip-path-16)">
+          <g id="triangle-right" transform="translate(-1.8 -1.2)">
+            <path id="Pfad_260" data-name="Pfad 260" d="M4.56,1.32a.6.6,0,0,0-.96.48V12.6a.6.6,0,0,0,.96.48l7.2-5.4a.6.6,0,0,0,0-.96Z" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Template_Round" data-name="Template Round" transform="translate(17 208)">
+      <g transform="matrix(1, 0, 0, 1, 124, -4)" filter="url(#Shadow-16)">
+        <rect id="Shadow-34" data-name="Shadow" width="39" height="37" rx="18.5" transform="translate(54 312)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 124, -4)" filter="url(#Light-16)">
+        <rect id="Light-34" data-name="Light" width="39" height="37" rx="18.5" transform="translate(54 312)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-16" data-name="Base" width="39" height="37" rx="18.5" transform="translate(178 308)" fill="#f4f5f8"/>
+      <g id="Gruppe_60-12" data-name="Gruppe 60" transform="translate(188.257 319)">
+        <g id="Gruppe_maskieren_32" data-name="Gruppe maskieren 32" clip-path="url(#clip-path)">
+          <g id="i-delete" transform="translate(-6.257 -8)">
+            <rect id="Rechteck_85" data-name="Rechteck 85" width="16" height="2.667" transform="translate(8 14.667)" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Template_Round-2" data-name="Template Round" transform="translate(73 208)">
+      <g transform="matrix(1, 0, 0, 1, 68, -4)" filter="url(#Shadow-17)">
+        <rect id="Shadow-35" data-name="Shadow" width="39" height="37" rx="18.5" transform="translate(110 312)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 68, -4)" filter="url(#Light-17)">
+        <rect id="Light-35" data-name="Light" width="39" height="37" rx="18.5" transform="translate(110 312)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-17" data-name="Base" width="39" height="37" rx="18.5" transform="translate(178 308)" fill="#f4f5f8"/>
+      <g id="Gruppe_60-13" data-name="Gruppe 60" transform="translate(188.257 319)">
+        <g id="Gruppe_maskieren_30" data-name="Gruppe maskieren 30" clip-path="url(#clip-path)">
+          <g id="auto-flash-2" transform="translate(1.744 0.001)">
+            <path id="Pfad_257" data-name="Pfad 257" d="M13.264,6.372a.666.666,0,0,0-.6-.372H7.411L7.995.74A.667.667,0,0,0,6.8.259L.137,8.925A.668.668,0,0,0,.667,10H5.922l-.584,5.26a.666.666,0,0,0,1.191.48l6.666-8.666A.668.668,0,0,0,13.264,6.372Z" fill="#162346"/>
+            <path id="Pfad_258" data-name="Pfad 258" d="M14.312,16l-.281-1.07H12.175L11.886,16h-1.7l1.863-5.734h2.059L16,16Zm-.6-2.336-.246-.937q-.086-.312-.209-.809t-.162-.711q-.035.2-.139.656t-.459,1.8Z" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Template_Round-3" data-name="Template Round" transform="translate(129 208)">
+      <g transform="matrix(1, 0, 0, 1, 12, -4)" filter="url(#Shadow-18)">
+        <rect id="Shadow-36" data-name="Shadow" width="39" height="37" rx="18.5" transform="translate(166 312)" fill="#eceff4"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 12, -4)" filter="url(#Light-18)">
+        <rect id="Light-36" data-name="Light" width="39" height="37" rx="18.5" transform="translate(166 312)" fill="#eceff4"/>
+      </g>
+      <rect id="Base-18" data-name="Base" width="39" height="37" rx="18.5" transform="translate(178 308)" fill="#f4f5f8"/>
+      <g id="Gruppe_60-14" data-name="Gruppe 60" transform="translate(188.257 319)">
+        <g id="Gruppe_maskieren_31" data-name="Gruppe maskieren 31" clip-path="url(#clip-path)">
+          <g id="i-add" transform="translate(-6.257 -8)">
+            <path id="Pfad_259" data-name="Pfad 259" d="M24,14.667H17.333V8H14.667v6.667H8v2.667h6.667V24h2.667V17.333H24Z" fill="#162346"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Logo" transform="translate(-1385.772 -126)">
+      <g id="boat-front" transform="translate(1603 1022)">
+        <path id="Pfad_14" data-name="Pfad 14" d="M2,38.2a3.477,3.477,0,0,0,6.54,1.656,3.458,3.458,0,0,0,6.1,0,3.477,3.477,0,0,0,6.54-1.656" transform="translate(-2 -22.418)" fill="none" stroke="#e3bd22" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Pfad_15" data-name="Pfad 15" d="M20,6.36V2h3.488V6.36" transform="translate(-12.152 -2)" fill="none" stroke="#e3bd22" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Pfad_16" data-name="Pfad 16" d="M10,18.879V13.308A1.308,1.308,0,0,1,11.308,12H20.9a1.308,1.308,0,0,1,1.308,1.308v5.571" transform="translate(-6.512 -7.64)" fill="none" stroke="#162346" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Pfad_17" data-name="Pfad 17" d="M7.744,27.848,6,24.36,13.848,20,21.7,24.36l-1.744,3.488" transform="translate(-4.256 -12.152)" fill="none" stroke="#162346" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Linie_9" data-name="Linie 9" y2="6.104" transform="translate(9.592 7.848)" fill="none" stroke="#162346" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <text id="Costa_Di_Lusso" data-name="Costa Di Lusso" transform="translate(1626.544 1035.744)" fill="#162346" font-size="12" font-family="Aileron-Bold, Aileron" font-weight="700"><tspan x="0" y="0">Costa Di Lusso</tspan></text>
+    </g>
+  </g>
+</svg>
