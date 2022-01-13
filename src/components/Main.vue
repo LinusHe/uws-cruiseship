@@ -44,17 +44,18 @@
           <Dashboard v-if="monitorIsActive" ref="dashboard"></Dashboard>
         </div>
       </div>
-      <v-row align="center" justify="center">
+      <v-row align="center" justify="center" eager>
         <div id="remote-container" class="pa-5">
           <v-row align="center" justify="center">
             <h1 class="ma-5">Remote Control Design</h1>
           </v-row>
-          <v-row align="center" justify="center">
+          <v-row align="center" justify="center" eager>
             <v-img
               src="@/assets/img/remote.svg"
               contain
               max-height="800"
               id="remote"
+              eager
             ></v-img>
           </v-row>
         </div>
