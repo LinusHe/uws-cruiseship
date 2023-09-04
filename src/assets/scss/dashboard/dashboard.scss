@@ -1,5 +1,7 @@
 #dashboard {
-  background: linear-gradient(120deg, #f0e6f0 15%, #d8ebf1 80%, #cfebf1 90%);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: linear-gradient(120deg, #f0e6ffff 15%, #d8ebf1ff 80%, #cfebf1ff 90%);
 
   &::after {
     padding-top: 56.25%;
@@ -63,16 +65,20 @@
           .expand {
             width: 46rem !important;
           }
+
           .expand-1 {
             left: -16.5rem !important;
+
             .btn-close {
               position: absolute;
               left: 60rem;
               top: 4rem;
             }
           }
+
           .expand-2 {
             left: -32rem !important;
+
             .btn-close {
               position: absolute;
               left: 75rem;
@@ -80,20 +86,25 @@
             }
           }
         }
+
         &.expand-xs {
           .expand {
             width: 23rem !important;
           }
+
           .expand-1 {
             left: -4.5rem !important;
+
             .btn-close {
               position: absolute;
               left: 37rem;
               top: 4rem;
             }
           }
+
           .expand-2 {
             left: -26.5rem !important;
+
             .btn-close {
               position: absolute;
               left: 37rem;

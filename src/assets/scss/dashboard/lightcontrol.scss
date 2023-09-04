@@ -1,7 +1,7 @@
 #lightControl {
   .lamp-container {
     width: 8rem;
-    background-color: #fff;
+    background-color: #ffffffaa;
     box-shadow: 3px 3px 14px 7px rgb(0 0 0 / 5%);
     padding: 0.7rem;
     border-radius: 1rem;
@@ -10,6 +10,8 @@
       margin: 0;
       font-size: 0.9rem;
       margin-top: 0.5rem;
+      margin-bottom: .5rem;
+      font-weight: 500;
     }
 
     .number {
@@ -23,10 +25,11 @@
     }
 
     .brightness-gradient {
-      border-radius: 0px 0px 1rem 1rem;
+      border-radius: 0px 0px 10rem 10rem;
+      margin: 1rem 0rem 0;
 
       img {
-        height: 1.8rem;
+        height: .3rem;
         padding: .1rem;
         padding-left: .4rem;
       }

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <class class="main-content">
     <v-container>
       <v-row align="center" justify="center" class="mt-5">
         <v-btn
@@ -39,29 +39,30 @@
           Send Example Notification
         </v-btn>
       </v-row>
-      <div id="monitor">
+      <div id="monitor" v-if="monitorIsActive">
         <div id="monitorscreen" v-bind:class="{ active: monitorIsActive }">
-          <Dashboard v-if="monitorIsActive" ref="dashboard"></Dashboard>
+          <Dashboard ref="dashboard"></Dashboard>
         </div>
       </div>
-      <v-row align="center" justify="center" eager>
-        <div id="remote-container" class="pa-5">
-          <v-row align="center" justify="center">
-            <h1 class="ma-5">Remote Control Design</h1>
-          </v-row>
-          <v-row align="center" justify="center" eager>
-            <v-img
-              src="@/assets/img/remote.svg"
-              contain
-              max-height="800"
-              id="remote"
-              eager
-            ></v-img>
-          </v-row>
-        </div>
+      <v-row
+        @click="monitorIsActive = !monitorIsActive"
+        class="mt-12"
+        v-if="!monitorIsActive"
+        align="center"
+        justify="center"
+        eager
+      >
+        <v-img
+          style="cursor: pointer"
+          src="@/assets/img/remote.svg"
+          contain
+          max-height="800"
+          id="remote"
+          eager
+        ></v-img>
       </v-row>
     </v-container>
-  </div>
+  </class>
 </template>
 
 <script>
@@ -77,7 +78,7 @@ export default {
   mounted() {},
 
   data: () => ({
-    monitorIsActive: false,
+    monitorIsActive: true,
   }),
 
   methods: {

@@ -15,12 +15,12 @@
           <div class="divider-xs"></div>
         </v-row>
         <v-row justify="center" class="align-center">
-          <v-btn @click="changeBrightness(lamp, -5)" fab elevation="0" class="myfab-xxs" color="#162346">
-            <v-icon color="white">mdi-minus</v-icon>
+          <v-btn @click="changeBrightness(lamp, -5)" fab elevation="0" class="myfab-xxs" color="#ffffff">
+            <v-icon color="#162346">mdi-minus</v-icon>
           </v-btn>
           <p class="number">{{ lamp.brightness }}%</p>
-          <v-btn @click="changeBrightness(lamp, 5)" fab x-small elevation="0" class="myfab-xxs" color="#162346">
-            <v-icon color="white">mdi-plus</v-icon>
+          <v-btn @click="changeBrightness(lamp, 5)" tex fab x-small elevation="0" class="myfab-xxs" color="#ffffff">
+            <v-icon color="#162346">mdi-plus</v-icon>
           </v-btn>
         </v-row>
         <v-row>

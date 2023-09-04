@@ -1,36 +1,45 @@
+// #monitor {
+//   background: #000;
+//   position: relative;
+//   border-top: 3px solid #888;
+//   margin: 5%;
+//   padding: 1% 1% 2.5% 1%;
+//   border-radius: 10px;
+//   border-bottom-left-radius: 50% 2%;
+//   border-bottom-right-radius: 50% 2%;
+//   transition: margin-right 1s;
+//   box-shadow: 20px 20px 40px 20px #00000015;
+// }
 #monitor {
-  background: #000;
-  position: relative;
-  border-top: 3px solid #888;
+  // background: #000;
+  // position: relative;
   margin: 5%;
-  padding: 1% 1% 2.5% 1%;
-  border-radius: 10px;
-  border-bottom-left-radius: 50% 2%;
-  border-bottom-right-radius: 50% 2%;
+  border-radius: 40px;
   transition: margin-right 1s;
   box-shadow: 20px 20px 40px 20px #00000015;
 }
 
-#monitor:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 2.5%;
-  left: 36%;
-  height: 0.1%;
-  width: 28%;
-  background: #ddd;
-  border-radius: 50%;
-  box-shadow: 0 0 3px 0 white;
-}
+// #monitor:after {
+//   // content: "";
+//   // display: block;
+//   // position: absolute;
+//   // bottom: 2.5%;
+//   // left: 36%;
+//   // height: 0.1%;
+//   // width: 28%;
+//   // background: #ddd;
+//   // border-radius: 50%;
+//   // box-shadow: 0 0 3px 0 white;
+// }
 
-#monitorscreen.active {
-  background-color: rgb(29, 29, 29);
-}
+// #monitorscreen.active {
+//   background-color: rgb(29, 29, 29);
+// }
 
 #monitorscreen {
-  position: relative;
-  background-color: #000;
+  // position: relative;
+  border-radius: 40px;
+  background-color: #ffffff20;
   background-size: cover;
   background-position: top center;
   height: 0;

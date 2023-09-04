@@ -1,6 +1,6 @@
 <template>
-  <v-alert :value="alert" color="#162346" dark icon="mdi-information" transition="scale-transition" class="alert">
-    <b>{{ msg }}</b>
+  <v-alert :value="alert" icon="mdi-information" transition="scale-transition" class="alert">
+    <b style="color: #162346;;">{{ msg }}</b>
     <div class="event-container">
       <div class="event" :class="'type-' + event.type">
         <v-row class="event-content">
@@ -66,7 +66,7 @@ export default {
         this.alert = true;
         setTimeout(() => {
           this.alert = false;
-        }, 5000);
+        }, 50000);
       } else if (displayCount != changeData.length) this.triggerNotification();
       else window.location.reload();
     },
